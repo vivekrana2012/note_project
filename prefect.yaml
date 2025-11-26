@@ -1,0 +1,14 @@
+# prefect.yaml
+name: yt_video_to_summary
+
+work_pools:
+  - name: yt-pipeline
+    type: process
+    tags: []
+
+deployments:
+  - name: yt_pipeline_deploy
+    entrypoint: pipeline.py:yt_pipeline
+    work_pool_name: yt-pipeline
+    project_dir: /Users/viv/CascadeProjects/note_project
+    schedules: []

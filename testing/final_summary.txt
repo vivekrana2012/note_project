@@ -1,0 +1,151 @@
+Here is the merged summary:
+
+### Entity Name: India's Electric Two-Wheeler Industry
+- The demand for two-wheelers is often used as a proxy for rural India's economic growth.
+- India is the world's largest maker for two-wheelers, with an increasing focus on electric vehicles.
+- In 2025, India's two-wheeler EV market became the world's second-largest, with an 8% penetration rate.
+
+-- Key Numbers --
+- 2020: The year when India's two-wheeler EV market hardly existed.
+- 2025: The year when India's two-wheeler EV market became the world's second-largest, with an 8% penetration rate.
+- 24th November: The date of the show recording, which is also Monday.
+- 65,600: The number of units sold by Aether in the latest quarter.
+- 67%: The year-on-year increase in Aether's unit sales.
+- 941 crore: The record sales worth of Aether in rupees.
+- 12.1%: Aether's market share last year.
+- 17.4%: Aether's market share this year.
+- 10%: The improved margins of Aether, approximately.
+- 21%: The old margins of Aether, approximately.
+- 52,666: The number of vehicles sold by Ola Electric.
+- 0.3%: The positive EBITDA recorded by Ola Electric.
+- 15 lakh: The total number of vehicles sold by TBS Motor in the last quarter.
+- 80,000: The number of EV scooters sold by TBS Motor.
+- 5.3%: The percentage of TBS Motor's business that was EV scooters.
+
+### Entity Name: Bajaj Auto
+- Sold a record number of vehicles in the last quarter, with both EBITDA margins and revenue touching all-time highs.
+- Bajaj also owns 390 Chetak exclusive stores and 4000+ retail points, which can be adapted for the EV age.
+
+-- Key Numbers --
+- 12.94 lakh: Total vehicles sold by Bajaj Auto.
+- 20.5%: The EBITDA margins achieved by Bajaj Auto.
+- 14,922 crore: Revenue earned by Bajaj Auto.
+- 390: Number of Chetak exclusive stores owned by Bajaj.
+- 4000+: Number of retail points owned by Bajaj.
+
+### Entity Name: TBS Motor
+- Sold a record number of vehicles in the last quarter, with both EBITDA margins and revenue touching all-time highs.
+- TBS also has an EV business that sold 80,000 units in the last quarter.
+
+-- Key Numbers --
+- 11,095 crore: The record quarterly opening revenue.
+- 1266 crore: Profit before tax.
+- 15 lakh: Total vehicles sold by TBS Motor in the last quarter.
+- 80,000: Number of EV scooters sold by TBS Motor.
+- 5.3%: The percentage of TBS Motor's business that was EV scooters.
+
+### Entity Name: Ola Electric
+- Secured PLI certification for its entire Gen 3 scooter lineup through 2028.
+- Filed a claim for Rs 380 crore based on approximately Rs 3000 crore in eligible FY25 sales.
+- Received PLI incentives, which made up a small chunk of their positive EBITDA margins.
+- Ola faces a backlog larger than the typical post-monsoon spike in after-sales service due to insufficient parts supply and lack of technicians.
+
+-- Key Numbers --
+- Rs 380 crore: Claim filed by Ola for FY25 sales based on eligible amounts.
+- Rs 3000 crore: Eligible FY25 sales amount used to calculate Ola's claim.
+- Rs 330 crore: Potential claim by TVS for FY25 PLI benefits.
+
+### Entity Name: Aether (India's second largest TV maker)
+- Did not qualify for the PLI scheme, forcing them to delay new product launches and put them at a disadvantage against peers.
+
+### Industry: Indian Two-Wheeler Market
+- Saw an all-time high of 1.44 lakh units in e-scooter sales this October.
+- Demand held strong despite ICE vehicles becoming more attractive.
+- Ideal price reduction for petrol bikes might not change the equation, but short-term defensive pricing is expected.
+
+-- Key Numbers --
+- Rs 380 crore: Claim filed by Ola for FY25 sales based on eligible amounts.
+- Rs 3000 crore: Eligible FY25 sales amount used to calculate Ola's claim.
+- Rs 330 crore: Potential claim by TVS for FY25 PLI benefits.
+
+### Industry: Indian Electric Vehicle (EV) Market
+- Charging infrastructure is fragmented, with most buyers charging at home using standard sockets.
+- Delivery fleets and commercial riders require fast charging throughout the day.
+- Companies have proprietary networks to solve this issue but face challenges due to incompatible chargers.
+- Battery swapping as an alternative faces the same bottleneck due to differing sizes and designs among companies.
+
+-- Key Numbers --
+- 7%: Reduction in petrol bike prices that might not significantly change the equation.
+- 5%: GST rate on EVs.
+- 28%: Original GST rate on petrol two-wheelers under 350 cc.
+- 18%: Lowered GST rate on petrol two-wheelers under 350 cc after September's reforms.
+
+### Entity Name: Aether's Grid
+- Proprietary network by Aether for fast charging of e-scooters.
+- Incompatible with Ola's hypercharger stations due to lack of standards.
+
+### Entity Name: Quality Control Order (QCO)
+* Summary: QCOs are a policy tool implemented by the Indian government to achieve certain economic ends. They represent a philosophy that prioritizes domestic industry over imports, often at the cost of making imported products less competitive.
+* Key Numbers:
+  - 2021: The year in which the BIS set many standards for toys covering various safety aspects.
+  - 7-8 months: The timeframe required to comply with QCOs procedures, including paperwork and factory inspections.
+  - Per DM fee: A fee charged for hosting BIS inspectors in one's home country.
+
+### Entity Name: Bureau of Indian Standards (BIS)
+* Summary: The BIS is a government agency responsible for setting quality standards for products in India. It implements measures to restrict imports and promote domestic manufacturing.
+* Key Numbers:
+    - 2021: The year the BIS set many standards for toys covering various safety aspects.
+
+### Entity Name: Indian Government
+- Has implemented PLI schemes for industries like automotive and electronics to boost domestic production.
+- Is providing incentives to encourage domestic manufacturers to adopt electric vehicles.
+- Focusing on developing charging infrastructure to support the growth of EVs.
+
+### Industry: Global Footwear Exports
+* India's share decreased after implementing QCOs.
+* Competitors like Vietnam saw an increase in textile exports.
+* China plus one wave did not lead to significant export gains for India.
+
+### Entity Name: Textile Industry
+- Man-made fibre textile exports to major markets fell or stagnated after input QCOs.
+- Domestic prices rose 15-30% above world levels for certain raw materials.
+- Finished Indian products face a huge cost disadvantage in global markets due to increased costs.
+
+### Entity Name: Steel Industry
+- Restrictions on high-grade steel forced factories to operate below capacity.
+- Domestic prices rose 15-30% above world levels for certain raw materials.
+
+### Entity Name: SMEs (Small and Medium-Sized Enterprises)
+* Burdened by QCOs, which raise entry barriers and costs.
+* Certification costs alone can be as high as Rs 10,000-15,000 per consignment.
+* Delays of over half a year can become too onerous for small businesses.
+
+### Entity Name: Large Companies
+- Have resources to meet strict standards set by QCOs.
+- Can invest in testing labs and hire consultants to absorb delays.
+- Still face challenges due to increased compliance costs.
+
+### Industry: Machinery Parts Industry
+* Increased usage of QCOs by over 10 times since 2018
+
+### Entity Name: Indian Competition Enforcement Policy
+- Increase in usage of QCOs by over 10 times since 2018
+
+### Entity Name: Reliance Industries
+- Summary: Reliance Industries is under investigation for alleged diversion of loans, with the ED probing Rs. 13,600 crore and $569 million from Yes Bank.
+- Key Numbers:
+  - Rs. 13,600 crore: amount allegedly diverted from Yes Bank
+  - $569 million: equivalent amount in USD
+  - Rs. 8,901 crore: assets frozen by ED linked to Anilambani Group
+
+### Entity Name: Reserve Bank of India (RBI)
+- Summary: The RBI has reported an 80.21% credit deposit ratio above the Avias Comfort Band.
+- Key Numbers:
+  - 80.21%: current credit deposit ratio
+  - 9.7%: sluggish deposit growth rate
+  - 11.3%: stronger credit demand
+
+### Entity Name: India's Banking Sector
+- Summary: Indian banks have achieved an 80.21% credit deposit ratio, driven by slower deposit growth and increased credit demand.
+- Key Numbers:
+  - 80.21%: current credit deposit ratio

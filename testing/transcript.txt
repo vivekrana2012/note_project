@@ -1,0 +1,244 @@
+ In today's episode of The Daily Brief, I'll talk about two interesting stories.
+ I first talk about a temperature check for India's two-wheeler EVs.
+ And finally, I talk about the economics behind quality control orders.
+ Welcome back to The Daily Brief show by Zeruda, where our aim is to simplify the biggest news
+ in the financial markets in a way that's one level deeper as compared to news channels.
+ I'm your host Akshara and today is Monday, 24th November.
+ Coming to the first story, it's hard to overstate how important two-wheelers are to India.
+ We're the world's largest maker for two-wheelers and these humble vehicles define how hundreds of
+ millions of us move, work and earn a living. They're so crucial to our way of life that
+ the demand for two-wheelers is often used as a proxy for rural India's economic growth.
+ So when we began making our transition to electric vehicles, two-wheelers were the obvious
+ category to begin with. As we covered in our last story on Ola and Aether, India's two-wheeler EV
+ market went from hardly existing in 2020 to becoming the world's second largest in 2025,
+ crossing 8% penetration. But this sector is in flux. A lot has happened in the last quarter alone,
+ from China choking our imports of critical supplies to potential technological breakthroughs
+ to shifts in government policy. These few months have been a stress test for our
+ electric two-wheeler ambitions. So we'll be looking at the latest quarterly results of four
+ companies, Ola Electric, Aether, Bajaj and TVS, to see how the sector has been navigating various
+ speedbreakers and how the road ahead looks for them. Let's start with how each company fared
+ this quarter. Aether sold approximately 65,600 units up 67% year-on-year to record sales worth
+ rupees 941 crore. It increased its market share from 12.1% last year to 17.4% this year. While the
+ company isn't profitable yet, it's burning less money than before, with a bit our margins improving
+ to approximately 10% from approximately 21% a year ago. Ola Electric sold 52,666 vehicles,
+ nearly half the sales from the same time last year. That meant they lost some market share to
+ their peers. However, for the first time, Ola recorded a positive EBITDA of approximately 0.3%
+ potentially because of extensive cost cutting. Briefly, these two companies were synonymous
+ with India's electric two-wheeler industry. But even as they were still burning cash to create a
+ market, the legacy players Bajaj and TBS have thrown their hats into the ring. TBS Motor recently
+ became the market leader in this segment and last quarter it furthered its lead. This was its best
+ ever quarter of EV sales and its best quarter as a whole with a record quarterly opening revenue of
+ rupees 11,095 crore, which translated into a profit before tax of rupees 1266 crore.
+ Across categories, it sold approximately 15 lakh vehicles in the last quarter,
+ of which 80,000, roughly 5.3% were EV scooters. Think about what that means. 5% of their business
+ this quarter surpassed the quarterly volumes of Ola and Aether each. Now, Bajaj Auto didn't break
+ down its EV numbers in particular, although it did mention that EVs are their fastest growing
+ segment. Overall, however, it had a great quarter as well. It sold 12.94 lakh vehicles in total
+ with both EBITDA margins at 20.5% and revenue of rupees 14,922 crore touching all-time highs.
+ As we've written before, China has thrown up barriers to our imports of rare earth magnets
+ and as any 10th grade physics textbook would tell you, magnets help us turn electricity into movement.
+ If they're no longer in supply, EV makers feel the squeeze. Each company has handled this squeeze
+ differently. Curiously, all our claims will move to the fastest. By October, it created a new traction
+ motor which eliminates their air earth dependency entirely. Now, this is a bold claim and one that
+ deserves a deeper dive. See, there are two types of magnets relevant for vehicles. First are rare
+ earth magnets. These are made of things like neodymium and are powerful, compact, heat resistant,
+ making them ideal for EVs. Only, China has a strong hold on these. Then, there are ferrite magnets,
+ or to put it simply, magnets made of iron compounds. This is an older way of making magnets and has
+ been used in all sorts of products. Now, these are far cheaper than rare earths. Crucially though,
+ these are usually much weaker, heavier and less heat resistant than rare earth equivalents.
+ One could use a ferrite motor in an EV. Tesla has, for instance. But how do you get the same
+ power as you would in a rare earth-driven EV? Apparently, Ola has achieved this,
+ optimizing its magnetic circuits and making designed tweaks to squeeze out more power from its motor.
+ This, Ola claims, helped its ferrite motors match the performance of rare earth motors in the 7kW
+ and 11kW power classes. That's plausible, but it's a bold technical claim and it might
+ involve trade-offs that aren't obvious just yet. That claim will be tested over time as its vehicles
+ are used over the years, handling heat and heavy loads in Indian conditions. If, and that's a really
+ big if, this holds up in real-world use, it'll be a massive breakthrough. Then comes Aether,
+ which seems to have taken a more measured approach. The company has shifted away from heavy rare earth
+ magnets, the ones China controls most tightly, but that doesn't mean its alternatives don't have any
+ rare earths. Only, they have light rare earths and avoid elements like dyspropium and terbium.
+ These heavier elements handle high temperatures better and prevent the magnet from losing power
+ when it heats up. And so, Aether's alternatives cut supply chain risk, but that might come at
+ the cost of some efficiency, especially at high temperatures. In fact, Aether acknowledged this
+ as a short-term stopgap while continuing research on long-term solutions. The company also deferred
+ Rs 26.2 crore of state incentives due to supply chain disruptions. Now, the other two didn't
+ specify how they managed to squeeze. Bajaj Auto bluntly accepted that the lack of magnets damaged
+ their business, but they were positive about the resilience of their business and the industry
+ as a whole in the face of a disruption. While their flagship Chetak series took a hit, they
+ eventually recovered and did so earlier than they anticipated. The management of TVS similarly said
+ that the industry would have done much, much bigger numbers if magnets were available.
+ Now, supply chains weren't the only big force reshaping competition this quarter. Government
+ policy, specifically who gets subsidies and the recent GST cuts, changed the industry's landscape
+ as well. Let's start with the PLI scheme, which gives out 13-18% of EV sales value as cashback
+ to companies that meet strict investment conditions. Last quarter, that money made a lot of difference,
+ both to those who got it and to those who didn't. Bajaj Auto was a big beneficiary this quarter.
+ They could potentially claim Rs 630 crore in PLI incentives this year, the highest among all
+ automakers, four-wheelers included. The company had submitted 13 PLI applications for different
+ Chetak models and got all of them approved. This helped boost their margins from the vehicle.
+ In August, Ola secured PLI certification for its entire Gen 3 scooter lineup through 2028.
+ By September, it filed a claim for Rs 380 crore based on approximately Rs 3000 crore
+ in eligible FY25 sales. But interestingly, PLI incentives made up a very small chunk of their
+ positive EBITDA margins. It's possible that they'll only receive those disbursements in the future.
+ TVS started booking PLI benefits in Q4 FY25 after completing compliance audits. In fact,
+ it may claim approximately Rs 330 crore for FY25. This has led to a 0.5% improvement in
+ the margin since last year. But interestingly, while TVS, Bajaj and Ola benefited, Aether got
+ shut out. Despite being India's second largest TV maker, Aether didn't qualify for the PLI scheme.
+ This lack of support forced them to delay new product launches, putting them at a disadvantage
+ against their peers. September's GST reforms cut rates on petrol two-wheelers under 350 cc
+ from 28% to 18%. The rate on EVs, meanwhile, remained flat at 5% GST. This increased the
+ price gap between the two, making EVs relatively less cost attractive just as the festive buying
+ season was opening. But EV makers aren't worried, not yet at least. Even though ICE vehicles become
+ more attractive, the demand for EV two-wheelers held strong, with industry-wide e-scooter sales
+ hitting an all-time high of 1.44 lakh units this October. Crucially, EVs are usually cheaper to
+ run over their lifetime since electricity is cheaper than fuel. Ideally, a 7% reduction in
+ petrol bike prices might not change that equation much. Even so, in the short term,
+ EV companies may be under some pressure to respond. Aether, for instance, expects some
+ short-term defensive pricing or discounts to prop up sales.
+ As volumes grow, however, two bottlenecks are becoming clearer, charging access and service
+ networks. These gaps are becoming increasingly important as the market matures. EV charging
+ infrastructure currently is very fragmented. Most EV two-wheeler buyers charge their vehicles at home
+ overnight on a standard 15 amp socket. But while that works for personal use,
+ delivery fleets and commercial riders need fast charging throughout the day. And each company
+ has its own proprietary network to solve that problem, like the Aether grid or Ola's hypercharger
+ stations. But none of these chargers can talk to each other. For example, a Aether can't use an
+ Ola charger. Until standards emerge, each company's charging network remains a walled garden. This
+ artificially restricts the scale of the overall infrastructure. But there is another alternative
+ to charging these vehicles. You can instead swap their battery with charged ones.
+ But the same bottleneck lies there too. Each company has different battery sizes and designs.
+ A few pilot projects are testing this possibility with three-wheelers,
+ but there are no such projects for scooters. These companies are also running into problems with
+ after-sales service. This has been a pain point for Ola in particular. The company admitted that
+ it faces a backlog larger than the typical post monsoon spike, other OEMCs. Its parts are in
+ short supply and it doesn't have enough technicians to handle the load. To make after-sales service
+ faster, the company launched Hyperservice, where third-party garages can service their vehicles
+ with access to original parts. This is becoming an especially large problem because, increasingly,
+ they're competing with legacy players with decades of experience. Companies like TCS or Bajaj can
+ just use their existing service network and adapt it for the EV age instead of building from scratch.
+ Bajaj, for instance, has 390 Chetak exclusive stores and 4000 plus retail points. Coverage
+ that a startup will find very hard to build immediately. Last quarter and the record October
+ that followed proved that India's EV two-wheeler market can stand its own ground. But even as
+ customers have taken to EVs, the competition has changed. In a more mature market, old-school factors,
+ supply chain resilience, margin discipline and network scale are becoming more salient.
+ This is no longer a sunrise industry. It is, increasingly, a mature business and that changes
+ what you must do to survive within it. Now coming to the second story. As we saw in our last edition
+ since late October, the Indian government announced a rollback of various quality control orders or
+ QCOs across sectors like metals, chemicals and textiles. On the surface, this doesn't look like a
+ big deal. The name quality control order suggests that these were simply meant to keep the quality
+ of goods high. India's MSMEs though are celebrating this move as a massive improvement in the ease
+ of doing business. So why is something that sounds so harmless elicited such a strong reaction?
+ So according to our small businesses, this doesn't merely reduce paperwork.
+ They believe that after a long time, doing business in India might structurally get better
+ because QCOs aren't mere quality standards. They're a policy tool meant to achieve certain
+ economic ends. They represent a certain philosophy that the Indian government has operated with
+ and like any other policy, they come with trade-offs. They help those that make raw materials
+ at the cost of those that use them. We've previously covered similar trade-offs with tariffs on steel
+ where protecting steel makers can make sectors which use steel like cars or electronics
+ less competitive. QCOs amplify this dynamic across dozens of sectors. So let's dive in.
+ First, a fundamental question. How do QCOs work? So QCOs are legal requirements issued by ministries
+ in consultation with the Bureau of Indian Standards or BIS. They mandate that certain
+ products have to meet specific quality standards before anyone can manufacture, import or sell them
+ in India. For instance, take toys. Since 2021, the BIS has set many standards for toys covering
+ various safety aspects, sharp edges, small part hazards, flammability and so on. The idea is that
+ these are products for kids and therefore require extra care. On paper, QCOs are justified by this
+ kind of public interest. Now, that might sound reasonable. Only there's just one way of showing
+ that one complies with those standards. One must have their goods tested and certified by BIS recognized
+ labs. It's only after such certification that you can offer products in the Indian market.
+ These procedures can be painstaking, requiring immense paperwork and stringent factory inspections.
+ In all, this can sometimes take seven to eight months. Some of this is by design,
+ because while QCOs are framed as consumer protection tools, they have historically
+ served a different purpose. So in practice, India's QCOs function less as narrow consumer safety
+ regulation and more as industrial policy. While high standards might sound like a good thing,
+ in the case of QCOs, they're accompanied by high compliance costs. Those costs can be used to
+ protect domestic industry by making certain imports costlier or harder to obtain. Imagine
+ you ran a small low margin business out of China and were looking for international customers.
+ If your products come under a QCO, in order to sell in India, you would first have to pay
+ various types of fees to apply for a license, to obtain the ISI mark, to have your factory
+ audited and more. Then you would have to pay to host BIS inspectors in your home country from
+ their airfare to accommodation to a per DM fee. And then you would have to pay to have your samples
+ sent to an Indian laboratory for inspection. All of this would be time consuming and would take
+ mountains of paperwork. On paper, your Indian competitors would have the same requirements,
+ but complying with them is much easier in practice. Unless your margins from Indian sales
+ make up for all this, you simply avoid the Indian market. Domestic producers can then scale up to
+ fill the gap. Under the garb of quality control, you can essentially block imports. In fact, since
+ 2018, we've increased our usage of QCOs by over 10 times, just as we kicked off the Make in India
+ initiative, while seemingly also prioritizing the BIS approval of domestic suppliers more
+ than foreign firms. Toys are a classic example. Facing an influx of low-cost Chinese toys,
+ India imposed strict BIS standards starting in 2020. The move was explicitly aimed at reducing
+ import dependence and boosting domestic manufacturing. As a result, India's toy imports
+ plunged from $319 million in 2018 to just $40 million in 2021. But that's just a single industry.
+ We have QCOs across innumerable sectors, chemicals, synthetic fibers, steel alloys,
+ plastics, electronic components, machinery parts, you name it. But India is hardly the only one to
+ use such measures. Other countries have their own version of QCOs. In international trade lingo,
+ these are called non-tariff barriers or NTBs, and they've often been used to skirt international
+ trade law. A tariff hike by placing a clear numerical disadvantage on imports can easily
+ become the subject of a complaint at the World Trade Organization or WTO. However, a QCO which
+ is far more subjective can be defended as a technical regulation rather than a protectionist
+ measure, and so countries can get away more easily with NTBs.
+ There are two basic rationales for such a measure. The first, more basic one, is that you keep your
+ own market for your companies to profit from. A longer term hope ideally is that as these companies
+ grow and gain experience, they become competitive enough to export. So, does this work? Only
+ partially. The Think Tank CSEP finds that imports decline by 24% in the long term after a QCO is
+ imposed, and the decline is even higher for intermediate goods. When it comes to suppressing
+ imports, QCOs clearly work. However, QCOs are not nearly as effective in powering exports.
+ Interestingly, this doesn't play out in an entirely straightforward manner.
+ In the first year of a QCO, India's exports actually pick up by 10.6%. But then, weirdly
+ enough, they seem to decline by 12.8% in the second quarter. Over time, the CSEP concludes,
+ QCOs don't lead to any sustainable gain in exports. Now, let's get back to the toy industry.
+ Although QCOs successfully limited our toy imports, our exports growth was fairly measly.
+ From $131.5 million in 2019 to $167 million in 2024, a CAGR of less than 5% a year.
+ So, while falling imports gave us a trade surplus, we didn't see the industry go through an export
+ boom. And there are more such examples. India's man-made fibre textile exports to major markets
+ fell or stagnated after input QCOs, while competitors like Vietnam saw their textile
+ exports rise. QCOs are also why India's share of global footwear exports have actually fallen.
+ All of this, incidentally, was in the midst of the supposed China plus one wave.
+ So, why have export gains proven to be so elusive, especially in an era where global
+ conditions were supposed to be ripe for them? So, QCOs effectively increased the costs for our
+ manufacturers. Many QCOs are directed at raw and intermediate goods rather than finished goods.
+ This becomes a bottleneck for industries that require such goods, especially if there's little
+ domestic capacity for them. QCOs on polyester fibres, for instance, choked supplies for our
+ textile mills. Similarly, restrictions on high-grade steel forced factories to operate below capacity.
+ Even if there is domestic capacity, without international competition, producers of raw
+ material face less price pressure and often change more. In some QCO-affected sectors like
+ yarns and specialty steels, domestic prices rose 15-30% above world levels. This puts finished
+ Indian products at a huge cost disadvantage in global markets. The very move intended to improve
+ India's competitiveness, it seems, often undercut it by making key inputs costlier.
+ But QCOs don't only burden foreign companies. They're mandatory for Indian companies too.
+ Each QCO means additional compliance, testing fees, certification charges and long waiting times
+ for approval. And while Indian companies may have an easier time of meeting those requirements than
+ someone abroad, there's still a barrier to doing business. This burden falls heaviest on small
+ firms who have repeatedly complained that QCOs were raising entry barriers and costs.
+ Now, large companies have the resources to meet strict standards. They can invest in testing
+ labs, hire consultants and absorb delays. But small firms simply find it difficult to do so.
+ For instance, certification costs alone can be as high as Rs 10,000-15,000 per consignment.
+ Delays of over half a year too can become too onerous for small businesses.
+ So, curiously, not only do QCOs privilege Indian companies over foreign ones,
+ they also privilege large companies over small ones. This has led to increased market
+ concentration in QCO hit industries. And this is why, recently, a high-level
+ government committee led by Niti Ayog was set up to look into this problem.
+ Thankfully though, there has lately been a genuine rethink on QCOs. After years of ratcheting up
+ quality barriers, the government seems to have hit its biggest pause in a while. The suspension of
+ QCOs is expected to ease access to raw materials and reduce supply bottlenecks. And this might only
+ be the start. In October 2025, the Niti Ayog-led panel recommended scrapping or suspending over
+ 200 QCOs, mostly those on intermediate inputs. The committee urged that new quality orders
+ be limited strictly to products with genuine safety or environmental risks.
+ Externally, as we covered in our trade story yesterday, India is in a difficult trade
+ environment, especially as the United States closes its market. Putting up further barriers would
+ make life for MSMEs a lot harder. And India has likely recognized that we need to moderate our
+ usage of NTBs to secure better market access in return. Of course, not everyone is happy with
+ the loosening. Some large domestic producers who benefited from the insulated market are worried.
+ India's biggest steel makers, for example, fear that lifting steel QCOs could open the
+ floodgates to cheaper Chinese imports, pressuring their prices. But the trade-offs the government
+ increasingly seems to think are no longer worth it. Now coming to the tidbits. Reliance has stopped
+ importing Russian crude into its Jamnagar refinery from November 20th, ahead of new USU sanctions on
+ Rosneft and Lucoil. From December 1st, all exported fuels will be made only from non-Russian crude.
+ The last Russian cargo was lifted on November 12th, and any arrivals after November 20th will be
+ processed only in the domestic tariff area. Europe, 28% of reliance's exports will require
+ fully compliant cargos. Coming to the next tidbit. The SFIO has begun investigating reliance
+ communications for the period FY 2009 to 2024, adding to an ongoing ED probe into a legit diversion
+ of Rs. 13,600 crore and $569 million in Yes Bank loans. The ED has already frozen Rs. 8,901 crore
+ in assets linked to the Anilambani Group. Reliance Groups said the actions do not
+ affect reliance's infra or reliance power. Coming to the final tidbit. India's banks have
+ crossed an 80.21% credit deposit ratio above the Avias Comfort Band, driven by sluggish deposit
+ growth 9.7% and stronger credit demand 11.3%. With deposit mobilisation lagging, banks may have to
+ raise rates again. Economists say the ratio will stay elevated as loan demand rises and deposits
+ continue shifting to mutual funds. You can check out all the links in the description below.

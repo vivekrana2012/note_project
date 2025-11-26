@@ -1,0 +1,13 @@
+### Using Prefect for pipeline management
+
+prefect: pip install prefect
+
+prefect: prefect server start
+prefect: created a worker pool from UI -> http://127.0.0.1:4200
+prefect: export PREFECT_API_URL=http://127.0.0.1:4200/api
+prefect: prefect worker start --pool "yt-pipeline"
+prefect: prefect deploy
+
+prefect: The flow is now visible in UI
+
+prefect: prefect deployment run 'YouTube Video to Summary Pipeline/yt_pipeline_deploy' --params '{"url": "https://www.youtube.com/watch?v=3oGcMED8lxk"}'

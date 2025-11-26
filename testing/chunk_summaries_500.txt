@@ -1,0 +1,216 @@
+
+
+===== CHUNK 1 =====
+### Summary
+The article discusses the Indian electric two-wheeler market, its growth, and challenges. The sector has seen significant changes in recent months, including China choking imports of critical supplies and shifts in government policy. Four companies, Ola Electric, Aether, Bajaj, and TVS, are being analyzed to understand their performance and outlook.
+
+### Key Numbers
+- 2: India's ranking as the world's largest maker for two-wheelers.
+- 2020: The year when India's two-wheeler EV market was hardly existing.
+- 2025: The year when India's two-wheeler EV market became the world's second largest in terms of penetration, crossing 8%.
+- 4: Number of companies being analyzed for their performance and outlook.
+- 65,600: The approximate number of units sold by Aether this quarter, up 67% year-on-year.
+- ₹941 crore: The sales worth of Aether this quarter.
+- 12.1%: Aether's market share last year.
+- 17.4%: Aether's market share this year.
+- 52,666: The number of vehicles sold by Ola Electric.
+- 0.3%: Ola Electric's positive EBITDA for the first time due to extensive cost cutting.
+- ₹11,095 crore: Bajaj TBS Motor's record quarterly opening revenue.
+- ₹1266 crore: Bajaj TBS Motor's profit before tax in the last quarter.
+- 15 lakh: The number of vehicles sold by Bajaj TBS Motor across categories in the last quarter.
+- 80,000: Number of EV scooters sold by Bajaj TBS Motor in the last quarter (5.3% of total sales).
+- 8%: The penetration level of India's two-wheeler EV market as of 2025.
+
+### Entities
+- Akshara: Host of The Daily Brief show.
+- Zeruda: Organization behind The Daily Brief show.
+- Ola Electric: One of the four companies being analyzed for their performance and outlook.
+- Aether: One of the four companies being analyzed for their performance and outlook.
+- Bajaj: One of the four companies being analyzed for their performance and outlook.
+- TVS: One of the four companies being analyzed for their performance and outlook.
+- China: Country whose choking imports of critical supplies affected India's electric two-wheeler market.
+
+
+===== CHUNK 2 =====
+### Summary
+The market leader, TBS Motor, has achieved its best ever quarter for EV sales and overall revenue. This was largely due to its strong opening in the quarter, with a record quarterly revenue of rupees 11,095 crore and a profit before tax of rupees 1266 crore. The company's sales figures are impressive, with approximately 15 lakh vehicles sold in the last quarter, outpacing competitors Ola and Aether. Bajaj Auto also had a great quarter, selling 12.94 lakh vehicles with both EBITDA margins at 20.5% and revenue of rupees 14,922 crore touching all-time highs.
+
+### Key Numbers
+- TBS Motor's record quarterly revenue: rupees 11,095 crore
+- Profit before tax for TBS Motor in the last quarter: rupees 1266 crore
+- Total vehicles sold by TBS Motor in the last quarter: approximately 15 lakh
+- EV scooters sold by TBS Motor in the last quarter: roughly 80,000 (5.3% of total sales)
+- Quarterly volumes of Ola and Aether surpassed by TBS Motor's EV sales: 5%
+- Total vehicles sold by Bajaj Auto: 12.94 lakh
+- EBITDA margins for Bajaj Auto: 20.5%
+- Revenue of Bajaj Auto in the last quarter: rupees 14,922 crore
+- Power classes where Ola's ferrite motors match rare earth motors' performance: 7kW and 11kW
+
+### Entities
+- TBS Motor
+- Bajaj Auto
+- Ola
+- Aether
+
+
+===== CHUNK 3 =====
+### Summary
+Ola claims its ferrite motors match rare earth motors in the 7kW and 11kW power classes. Aether has shifted away from heavy rare earth magnets, using light rare earths instead, which may compromise efficiency at high temperatures. Bajaj Auto's flagship Chetak series took a hit due to lack of magnets but recovered earlier than expected. Government policy changes, including the PLI scheme, reshaped competition this quarter. Ola can potentially claim Rs 630 crore in PLI incentives, while TVS may claim approximately Rs 330 crore for FY25.
+
+### Key Numbers
+- 7kW and 11kW power classes
+- 13-18% of EV sales value as cashback (PLI scheme)
+- Rs 26.2 crore of state incentives deferred due to supply chain disruptions
+- Rs 630 crore in PLI incentives possible for Ola this year
+- Rs 380 crore claimed by Ola for FY25 based on approximately Rs 3000 crore in eligible sales
+- Approximately Rs 330 crore for FY25 claimed by TVS
+- 0.5% improvement in TVS's EBITDA margins due to PLI benefits
+
+### Entities
+- Ola
+- Aether
+- Bajaj Auto
+- TVS
+- India
+
+
+===== CHUNK 4 =====
+### Summary
+The PLI (Production-Linked Incentives) scheme has boosted margins for scooter manufacturers like TVS and Ola, but also created challenges with charging infrastructure and after-sales service. Despite this, EV sales have hit an all-time high of 1.44 lakh units in October, driven by lower running costs compared to ICE vehicles. However, bottlenecks remain, including fragmented charging infrastructure and proprietary networks that restrict scale.
+
+### Key Numbers
+- Rs 380 crore: Amount filed by Ola for FY25 based on approximately Rs 3000 crore in eligible sales
+- Rs 3000 crore: Approximate amount of eligible sales for FY25
+- Rs 330 crore: Potential claim from TVS for FY25
+- 0.5%: Improvement in margin since last year due to PLI incentives
+- 28%: Initial GST rate on petrol two-wheelers under 350 cc
+- 18%: Revised GST rate on petrol two-wheelers under 350 cc after September's reforms
+- 5%: GST rate on EVs
+- 1.44 lakh units: Industry-wide e-scooter sales in October, an all-time high
+- 7%: Potential reduction in petrol bike prices that may not change the equation for EVs
+
+### Entities
+- Ola
+- TVS
+- Aether
+
+
+===== CHUNK 5 =====
+### Summary
+The charging network for electric vehicles remains restricted due to each company's control, but swapping batteries is another alternative. Companies face issues with after-sales service, including parts shortages and technician availability. To address this, Ola launched Hyperservice, which provides access to original parts. The Indian EV two-wheeler market has shown resilience, but the competition has changed, with a focus on supply chain resilience, margin discipline, and network scale. The government's rollback of quality control orders (QCOs) is seen as an improvement in ease of doing business for MSMEs.
+
+### Key Numbers
+- 3-wheelers: being tested in pilot projects
+- 390: number of Chetak exclusive stores at Bajaj
+- 4000+: number of retail points at Bajaj
+- 2: the record October month for India's EV two-wheeler market
+
+### Entities
+- Ola
+- TCS
+- Bajaj
+- Indian government
+- MSMEs (Micro, Small and Medium Enterprises)
+- Hyperservice
+
+
+===== CHUNK 6 =====
+### Summary
+QCOs (Quality Control Orders) are a policy tool meant to achieve certain economic ends in India. They represent a philosophy that helps those who make raw materials at the cost of those who use them. QCOs amplify this dynamic across dozens of sectors, providing trade-offs between protecting domestic industry and making sectors less competitive.
+
+### Key Numbers
+- 2021: The year when the BIS set standards for toys covering various safety aspects.
+- 7 to 8 months: The time required for procedures under QCOs, including paperwork and factory inspections.
+- Dozens of sectors: Sectors that are affected by QCOs, amplifying the dynamic between protecting domestic industry and making sectors less competitive.
+
+### Entities
+- BIS (Bureau of Indian Standards): An organization responsible for setting standards for products in India.
+- ISI (Indian Standard Institution): A mark that indicates compliance with Indian standards.
+
+
+===== CHUNK 7 =====
+### Summary
+
+The Indian government has implemented Quality Control Orders (QCOs) to regulate the import of goods, particularly toys, and boost domestic manufacturing. The QCOs have been successful in reducing imports, with toy imports declining from $319 million in 2018 to $40 million in 2021. However, QCOs are not effective in promoting exports, with India's exports growth being limited. The Think Tank CSEP found that imports decline by 24% in the long term after a QCO is imposed, but QCOs do not lead to any sustainable gain in exports.
+
+### Key Numbers
+
+- $319 million: toy imports in 2018
+- $40 million: toy imports in 2021
+- 10 times: increase in usage of Quality Control Orders (QCOs) from 2018 to present
+- 10.6%: growth in India's exports in the first year after a QCO is imposed
+- 12.8%: decline in India's exports in the second quarter after a QCO is imposed
+- $131.5 million: toy exports in 2019
+- $167 million: toy exports in 2024
+- <4%: CAGR of toy exports from 2019 to 2024
+- 24%: decline in imports after a QCO is imposed, as found by the Think Tank CSEP
+
+### Entities
+
+- India
+- Quality Control Orders (QCOs)
+- World Trade Organization (WTO)
+- CSEP (Think Tank)
+
+
+===== CHUNK 8 =====
+### Summary
+QCOs (Quotas and Certification Orders) have been found to be ineffective in powering exports from India, despite initial growth in the first year. The Centre for the Study of Economic Policy (CSEP) concludes that QCOs do not lead to sustainable gains in exports. Instead, they increase costs for manufacturers, particularly those producing raw and intermediate goods, leading to a bottleneck in industries with little domestic capacity. This results in higher prices for finished Indian products, making them less competitive in global markets.
+
+### Key Numbers
+- 10.6%: Increase in India's exports in the first year of a QCO.
+- 12.8%: Decline in India's exports in the second quarter after implementing QCOs.
+- $131.5 million: Initial value of India's toy exports in 2019.
+- $167 million: Value of India's toy exports in 2024, with a CAGR of less than 5% per year.
+- 5%: Annual growth rate of India's toy exports from 2019 to 2024.
+- Rs 10,000-15,000: Certification costs for Indian companies under QCOs.
+- 0.5 years: Maximum delay in certification approval for small businesses.
+
+### Entities
+- India
+- Centre for the Study of Economic Policy (CSEP)
+- China
+
+
+===== CHUNK 9 =====
+### Summary
+The discussion revolves around entry barriers and costs for small firms in India's quality control order (QCO) regime. Large companies can afford to meet strict standards due to their resources, but small businesses struggle. Certification costs and delays of over half a year become prohibitive. Recently, the government has reevaluated QCOs, recommending scrapping or suspending over 200 orders, mostly on intermediate inputs.
+
+### Key Numbers
+- Rs 10,000-15,000: certification costs per consignment
+- 50%: percentage beyond which delays become too onerous for small businesses
+- Rs 8,901 crore: assets frozen by the ED linked to the Anilambani Group
+- $569 million: amount of Yes Bank loans diverted by Reliance Industries
+- 80.21%: credit deposit ratio above the Avias Comfort Band
+- 9.7%: sluggish deposit growth rate
+- 11.3%: stronger credit demand rate
+
+### Entities
+- Niti Ayog
+- QCO (Quality Control Order)
+- MSMEs (Micro, Small and Medium Enterprises)
+- Reliance Industries
+- Rosneft
+- Lucoil
+- Yes Bank
+- Anilambani Group
+
+
+===== CHUNK 10 =====
+### Summary
+Reliance Industries has started investigating reliance communications for the period FY 2009 to 2024, adding to an ongoing ED probe into a legitimate diversion of Rs. 13,600 crore and $569 million in Yes Bank loans. The ED has already frozen Rs. 8,901 crore in assets linked to the Anilambani Group. Reliance Groups stated that the actions do not affect reliance's infrastructure or power. India's banks have crossed an 80.21% credit deposit ratio above the Avias Comfort Band, driven by sluggish deposit growth of 9.7% and stronger credit demand of 11.3%. With deposit mobilization lagging, banks may have to raise rates again.
+
+### Key Numbers
+- Rs. 13,600 crore: amount diverted in Yes Bank loans under investigation
+- $569 million: amount diverted in Yes Bank loans under investigation
+- Rs. 8,901 crore: assets frozen by ED linked to Anilambani Group
+- 80.21%: credit deposit ratio above Avias Comfort Band
+- 9.7%: sluggish deposit growth rate
+- 11.3%: stronger credit demand rate
+
+### Entities
+- Reliance Industries
+- ED (Enforcement Directorate)
+- Anilambani Group
+- Yes Bank
+- Avias Comfort

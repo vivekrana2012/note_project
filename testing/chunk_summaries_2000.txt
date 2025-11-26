@@ -1,0 +1,90 @@
+
+
+===== CHUNK 1 =====
+### Summary
+The Indian government announced the rollback of quality control orders (QCOs) across sectors like metals, chemicals, and textiles, which has been met with significant relief by small businesses. The QCOs had become a major hurdle for MSMEs, causing them to face increased costs and regulatory burden. With the rollback, the ease of doing business in India is expected to improve, and MSMEs can now operate more efficiently. However, some experts caution that this development may not address the root causes of India's competitiveness challenges.
+
+### Key Numbers
+- 65,600: Units sold by Aether in the last quarter.
+- 67%: Year-on-year increase in units sold by Aether.
+- 941 crore: Sales worth rupees by Aether in the last quarter.
+- 12.1%: Market share of Aether last year.
+- 17.4%: Market share of Aether this year.
+- 52,666: Vehicles sold by Ola Electric.
+- 0.3%: Positive EBITDA margin recorded by Ola Electric.
+- 13-18%: PLI scheme cashback percentage to companies that meet investment conditions.
+- 630 crore: Potential PLI incentives for Bajaj Auto this year.
+- 380 crore: PLI claim filed by Ola for FY25 sales.
+- 330 crore: Potential PLI claim for TVS for FY25.
+- 1.44 lakh units: All-time high of e-scooter sales in October.
+- 15 lakh vehicles: Total vehicles sold by Bajaj in the last quarter.
+- 80,000: Vehicles that were EV scooters sold by Bajaj.
+- 5.3%: Percentage of Bajaj's business that was EV scooters.
+- 20.5%: EBITDA margins at Bajaj Auto.
+- 14,922 crore: Revenue touched by Bajaj Auto.
+- 26.2 crore: Deferred state incentives by Aether.
+
+### Entities
+- Ola Electric
+- Aether
+- Bajaj Auto
+- TVS
+- Zeruda
+- Akshara
+
+
+===== CHUNK 2 =====
+### Summary
+The Indian government has announced a rollback of various quality control orders (QCOs) across sectors like metals, chemicals, and textiles, which is expected to ease access to raw materials and reduce supply bottlenecks. The decision comes after a period of increased usage of QCOs by the government, which has led to higher compliance costs for Indian companies and reduced competitiveness in the global market.
+
+### Key Numbers
+- 10 times: increase in QCO usage since 2018
+- $319 million: India's toy imports in 2018
+- $40 million: India's toy imports in 2021
+- 15-30%: rise in domestic prices of raw materials like polyester fibres and specialty steels above world levels
+- Rs 10,000-15,000: certification costs for consignments
+- Rs 8,901 crore: assets frozen by the ED linked to the Anilambani Group
+- $569 million: Yes Bank loans diverted
+- 28%: proportion of Reliance's exports that will require fully compliant cargos from non-Russian crude
+- 80.21%: credit deposit ratio above the Avias Comfort Band
+- 9.7%: sluggish deposit growth rate
+- 11.3%: stronger credit demand rate
+
+### Entities
+- Bajaj
+- TCS
+- BIS (Bureau of Indian Standards)
+- Reliance
+- Rosneft
+- Lucoil
+- Yes Bank
+- Anilambani Group
+
+
+===== CHUNK 3 =====
+### Summary
+The article discusses India's trade environment, particularly for MSMEs (Micro, Small, and Medium Enterprises), and its impact on industries like steel production. The government is considering moderating non-tariff barriers to secure better market access. Reliance Industries has stopped importing Russian crude from November 20th, and all exported fuels will be made from non-Russian crude starting December 1st. The Securities and Exchange Board of India (SEBI) is investigating Reliance Communications for the period FY 2009-2024, while the Enforcement Directorate (ED) has frozen Rs. 8,901 crore in assets linked to the Anilambani Group. India's banks have crossed an 80.21% credit deposit ratio above the Avias Comfort Band, driven by sluggish deposit growth and stronger credit demand.
+
+### Key Numbers
+- 4–8 sentences summarizing the section, WITH all numbers preserved
+- 28% (percentage of reliance's exports requiring fully compliant cargos in Europe)
+- November 20th (date when Reliance stopped importing Russian crude into its Jamnagar refinery)
+- December 1st (date when all exported fuels will be made only from non-Russian crude)
+- Rs. 13,600 crore ($569 million) (amount of Yes Bank loans subject to ED probe)
+- Rs. 8,901 crore (amount of assets frozen by the ED linked to the Anilambani Group)
+- 80.21% (credit deposit ratio above the Avias Comfort Band)
+- 9.7% (sluggish deposit growth rate)
+- 11.3% (stronger credit demand rate)
+
+### Entities
+- MSMEs (Micro, Small, and Medium Enterprises)
+- India
+- United States
+- Reliance Industries
+- European Union
+- Rosneft
+- Lucoil
+- Yes Bank
+- Anilambani Group
+- Securities and Exchange Board of India (SEBI)
+- Enforcement Directorate (ED)

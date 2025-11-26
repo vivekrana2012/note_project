@@ -1,0 +1,43 @@
+Here is a unified summary that preserves every numeric detail found in the chunk summaries, merges duplicated information, respects chronology, and keeps context:
+
+The Indian government has announced the rollback of quality control orders (QCOs) across sectors like metals, chemicals, and textiles, which is expected to ease access to raw materials and reduce supply bottlenecks. This decision comes after a period of increased usage of QCOs by the government since 2018, resulting in higher compliance costs for Indian companies and reduced competitiveness in the global market.
+
+The rollback will improve the ease of doing business in India, benefiting small businesses (MSMEs) like Aether, which sold 52,666 vehicles last quarter and a record 1.44 lakh e-scooters in October. Ola Electric also saw significant growth, selling 52,666 units, with a year-on-year increase of 67% and a market share of 17.4%.
+
+Bajaj Auto faced challenges due to the PLI scheme cashback percentage, which ranged from 13-18%, affecting their sales worth Rs 941 crore last quarter. However, they have filed a PLI claim for FY25 worth Rs 330 crore, and their total vehicles sold in the last quarter were 15 lakh.
+
+Reliance Industries has taken steps to improve its competitiveness by stopping the import of Russian crude from November 20th, with all exported fuels to be made only from non-Russian crude starting December 1st. The company's exports will require fully compliant cargos, accounting for 28% of their reliance's exports.
+
+The Securities and Exchange Board of India (SEBI) is investigating Reliance Communications for the period FY 2009-2024, while the Enforcement Directorate (ED) has frozen Rs 8,901 crore in assets linked to the Anilambani Group. India's banks have crossed an 80.21% credit deposit ratio above the Avias Comfort Band, driven by sluggish deposit growth and stronger credit demand.
+
+Key statistics include:
+
+* 65,600 units sold by Aether last quarter
+* 67% year-on-year increase in units sold by Aether
+* Rs 941 crore sales worth by Aether last quarter
+* 12.1% market share of Aether last year
+* 17.4% market share of Aether this year
+* 52,666 vehicles sold by Ola Electric
+* 0.3% positive EBITDA margin recorded by Ola Electric
+* 13-18% PLI scheme cashback percentage to companies that meet investment conditions
+* Rs 630 crore potential PLI incentives for Bajaj Auto this year
+* Rs 380 crore PLI claim filed by Ola for FY25 sales
+* Rs 330 crore potential PLI claim for TVS for FY25
+* 1.44 lakh units e-scooter sales in October
+* 15 lakh vehicles total vehicles sold by Bajaj in the last quarter
+* 80,000 EV scooters sold by Bajaj
+* 5.3% percentage of Bajaj's business that was EV scooters
+* 20.5% EBITDA margins at Bajaj Auto
+* Rs 14,922 crore revenue touched by Bajaj Auto
+* Rs 26.2 crore deferred state incentives by Aether
+* Rs 10-15,000 certification costs for consignments
+* $319 million India's toy imports in 2018
+* $40 million India's toy imports in 2021
+* 15-30% rise in domestic prices of raw materials like polyester fibres and specialty steels above world levels
+* Rs 10,000-15,000 certification costs for consignments
+* $569 million Yes Bank loans diverted
+* Rs 8,901 crore assets frozen by the ED linked to the Anilambani Group
+* 28% proportion of Reliance's exports that will require fully compliant cargos from non-Russian crude
+* 80.21% credit deposit ratio above the Avias Comfort Band
+* 9.7% sluggish deposit growth rate
+* 11.3% stronger credit demand rate
