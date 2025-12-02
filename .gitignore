@@ -1,3 +1,5 @@
-/resources
+/resources/*
+!/resources/.gitkeep
+
 __pycache__/
 *.pyc

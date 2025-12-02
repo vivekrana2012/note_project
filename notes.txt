@@ -11,3 +11,7 @@ prefect: prefect deploy
 prefect: The flow is now visible in UI
 
 prefect: prefect deployment run 'YouTube Video to Summary Pipeline/yt_pipeline_deploy' --params '{"url": "https://www.youtube.com/watch?v=3oGcMED8lxk"}'
+
+### RSS ###
+Markets by Zerodha       -> https://www.youtube.com/feeds/videos.xml?channel_id=UCXbKJML9pVclFHLFzpvBgWw
+Markets by Zerodha Hindi -> https://www.youtube.com/feeds/videos.xml?channel_id=UCorKX0CAjQh0SnflWPnnI9w

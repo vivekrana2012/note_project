@@ -1,4 +1,4 @@
-from utils import videoId
+from utils import videoId, standard_filename
 from faster_whisper import WhisperModel
 from prefect import task
 
@@ -10,7 +10,7 @@ def transcript(filename):
 
     video_id = videoId(filename)
 
-    transcript_filename = f"transcript_{video_id}.txt"
+    transcript_filename = standard_filename(video_id, f"transcript_{video_id}.txt")
 
     # Open the output file for writing
     with open(transcript_filename, "w", encoding="utf-8") as f:

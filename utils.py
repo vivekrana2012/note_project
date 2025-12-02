@@ -11,3 +11,9 @@ def videoId(filepath):
         return parts[1]                            # abc123
     else:
         return None
+
+def standard_filename(video_id, filename):
+    base_dir = os.path.join("resources", video_id)
+    os.makedirs(base_dir, exist_ok=True)
+    
+    return os.path.join(base_dir, filename)

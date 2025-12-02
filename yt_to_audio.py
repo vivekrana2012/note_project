@@ -1,41 +1,74 @@
 from pytubefix import YouTube
 from prefect import task
 
+from utils import standard_filename
+
+import sqlite3
+import os
+
+class VideoAlreadyExists(Exception):
+    pass
+
 @task
 def download_audio(url):
-    yt = YouTube(url)
 
-    audio_stream = yt.streams.filter(only_audio=True).first()
+    db_path = os.path.join("resources", "youtube.db")
 
-    video_id = yt.video_id
+    conn = sqlite3.connect(db_path)
+    cur = conn.cursor()
 
-    # Audio filename (no extension needed, pytube adds it)
-    filename = f"audio_{video_id}"
+    try:
+        yt = YouTube(url)
+        video_id = yt.video_id
 
-    # Download audio
-    out_file = audio_stream.download(output_path=".", filename=filename)
-    print("Downloaded Audio: ", out_file)
+        cur.execute("SELECT 1 FROM youtube WHERE video_id=?", (video_id,))
+        exists = cur.fetchone() is not None
 
-    # ---- Create metadata file ----
-    metadata_filename = f"metadata_{video_id}.txt"
+        if exists:
+            print(f"video {video_id} already exists.")
+            raise VideoAlreadyExists(f"video {video_id} already exists.")
 
-    metadata = {
-        "video_id": video_id,
-        "url": url,
-        "title": yt.title,
-        "author": yt.author,
-        "publish_date": str(yt.publish_date),
-        "length_seconds": yt.length,
-        "views": yt.views,
-        "description": yt.description,
-        "rating": yt.rating,
-        "keywords": yt.keywords,
-    }
+        audio_stream = yt.streams.filter(only_audio=True).first()
+        
+        if not audio_stream:
+            raise ValueError("No audio stream available for this video")
 
-    with open(metadata_filename, "w", encoding="utf-8") as f:
-        for key, value in metadata.items():
-            f.write(f"{key}: {value}\n")
+        filename = f"audio_{video_id}"
 
-    print("Saved metadata: ", metadata_filename)
+        # Download audio
+        out_file = audio_stream.download(output_path=f"./resources/{video_id}", filename=filename)
+        print("Downloaded Audio: ", out_file)
 
-    return out_file
+        # ---- Create metadata file ----
+        metadata_filename = standard_filename(video_id, f"metadata_{video_id}.txt")
+
+        metadata = {
+            "video_id": video_id,
+            "url": url,
+            "title": yt.title,
+            "author": yt.author,
+            "publish_date": str(yt.publish_date) if yt.publish_date else "Unknown",
+            "length_seconds": yt.length,
+            "views": yt.views,
+            "description": yt.description,
+            "rating": yt.rating if hasattr(yt, 'rating') else "N/A",
+            "keywords": yt.keywords if yt.keywords else [],
+        }
+
+        with open(metadata_filename, "w", encoding="utf-8") as f:
+            for key, value in metadata.items():
+                f.write(f"{key}: {value}\n")
+
+        print("Saved metadata: ", metadata_filename)
+
+        cur.execute("""
+        INSERT OR IGNORE INTO youtube (video_id, url, title, publish_date)
+        VALUES (?, ?, ?, ?)
+        """, (metadata['video_id'], metadata['url'], metadata['title'], metadata['publish_date']))
+
+        conn.commit()
+        
+        return out_file
+        
+    finally:
+        conn.close()
