@@ -8,6 +8,7 @@ export interface VideoInfo {
   title: string;
   publish_date: string;
   timestamp: string;
+  thumbnail: string;
   file: string;
   path: string;
 }

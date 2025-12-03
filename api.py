@@ -11,7 +11,7 @@ def get_youtube_rows():
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     cursor = conn.cursor()
-    cursor.execute("SELECT video_id, url, title, publish_date, timestamp FROM youtube")
+    cursor.execute("SELECT video_id, url, title, thumbnail, keywords, publish_date, timestamp FROM youtube")
     rows = cursor.fetchall()
     conn.close()
     return [dict(row) for row in rows]

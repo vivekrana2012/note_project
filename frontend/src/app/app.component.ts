@@ -13,6 +13,9 @@ export class AppComponent implements OnInit {
   videos: VideoInfo[] = [];
   loading = true;
   error = '';
+  selectedVideo: VideoInfo | null = null;
+  summaryData: any = null;
+  loadingSummary = false;
 
   constructor(private videoService: VideoService) {}
 
@@ -40,5 +43,27 @@ export class AppComponent implements OnInit {
       month: 'long',
       day: 'numeric'
     });
+  }
+
+  viewSummary(video: VideoInfo) {
+    this.selectedVideo = video;
+    this.loadingSummary = true;
+    this.summaryData = null;
+
+    this.videoService.getVideoSummary(video.video_id).subscribe({
+      next: (data) => {
+        this.summaryData = data;
+        this.loadingSummary = false;
+      },
+      error: (err) => {
+        console.error('Failed to load summary', err);
+        this.loadingSummary = false;
+      }
+    });
+  }
+
+  closeSummary() {
+    this.selectedVideo = null;
+    this.summaryData = null;
   }
 }

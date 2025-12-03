@@ -5,6 +5,7 @@
     "app": {
       "projectType": "application",
       "sourceRoot": "src",
+      "root": "",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -20,6 +21,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
+            "buildTarget": "app:build",
             "proxyConfig": "src/proxy.conf.json"
           }
         }
