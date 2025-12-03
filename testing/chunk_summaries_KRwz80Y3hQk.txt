@@ -1,0 +1,504 @@
+
+
+===== CHUNK 1 =====
+Here is the JSON array with extracted entities:
+
+[
+  {
+    "entity_name": "Vishal Megamart",
+    "industry": "Retail",
+    "summary": "A large profitable retailer with a steadily compounding business. Added nearly 100 new stores over the year, even as each store grew its sales by an average of 12.8%.",
+    "key_numbers": [
+      "22%",
+      "Rs. 3000 crore",
+      "100"
+    ]
+  },
+  {
+    "entity_name": "Vmart",
+    "industry": "Retail",
+    "summary": "Showed three flavours of growth, with demand hitting its peak and average selling price falling due to early Diwali celebrations.",
+    "key_numbers": [
+      "12.8%",
+      "Rs. 3000 crore"
+    ]
+  },
+  {
+    "entity_name": "Sebi",
+    "industry": "Regulatory Body (Financial)",
+    "summary": "",
+    "key_numbers": [
+      ""
+    ]
+  },
+  {
+    "entity_name": "Zeruda",
+    "industry": "Media Outlet",
+    "summary": "",
+    "key_numbers": [
+      ""
+    ]
+  }
+]
+
+Note: The entity name for Sebi and Zeruda were not clearly defined in the text, so their summaries are empty.
+
+
+===== CHUNK 2 =====
+Here is the JSON array with the extracted information:
+
+```
+[
+  {
+    "entity_name": "Vishal Megamart",
+    "industry": "Retail",
+    "summary": "A large profitable retailer with a steadily compounding business. Its revenues rose by approximately 22% year on year, reaching Rs. 3000 crore. The company added nearly 100 new stores over the year and each store grew its sales by an average of 12.8%. Its operating margins were the best of three, comfortably above Vmart and a shade higher than V2.",
+    "key_numbers": [
+      "22%",
+      "Rs. 3000 crore",
+      "12.8%",
+      "100 new stores",
+      "3"
+    ]
+  },
+  {
+    "entity_name": "Vmart",
+    "industry": "Retail",
+    "summary": "A retailer in a different place, bleeding cash until recently. Its revenues rose about 22% to Rs. 800 crore in the quarter. The company added nearly 70 new stores and its same-store sales spiked by 11%. However, its profitability is still fragile.",
+    "key_numbers": [
+      "22%",
+      "Rs. 800 crore",
+      "11%",
+      "70 new stores"
+    ]
+  },
+  {
+    "entity_name": "V2",
+    "industry": "Retail",
+    "summary": "A rapidly scaling up retailer, with revenues almost doubling year on year to Rs. 710 crore. The company's same-store sales grew by a sober 10% and it opened 43 new stores in the last quarter.",
+    "key_numbers": [
+      "86%",
+      "Rs. 710 crore",
+      "10%",
+      "43 new stores"
+    ]
+  }
+]
+```
+
+
+===== CHUNK 3 =====
+Here is the rewritten text in a structured format as requested:
+
+[
+    {
+        "entity_name": "Vishal Megamart",
+        "industry": "Retail Industry",
+        "summary": "Emerges as the segment's steadiest ship with a healthy growing business.",
+        "key_numbers": [
+            "12%",
+            "6%",
+            "116",
+            "17 crore"
+        ]
+    },
+    {
+        "entity_name": "Vmart",
+        "industry": "Retail Industry",
+        "summary": "Recovering from a bad phase.",
+        "key_numbers": []
+    },
+    {
+        "entity_name": "V2",
+        "industry": "Retail Industry",
+        "summary": "Scaling up rapidly to challenge the incumbents.",
+        "key_numbers": [
+            "500 per square foot",
+            "750 per square foot"
+        ]
+    },
+    {
+        "entity_name": "India",
+        "industry": "",
+        "summary": "A country with a growing consumer market that is price-sensitive.",
+        "key_numbers": []
+    },
+    {
+        "entity_name": "Kerala",
+        "industry": "Retail Industry (specific region)",
+        "summary": "A state in India with a continuously populated population, making it suitable for Vishal Megamart's expansion strategy.",
+        "key_numbers": [
+            "6 cities"
+        ]
+    }
+]
+
+Note that I did not include the industry for India as it was not explicitly mentioned in the text. If you want to add it based on general knowledge, please let me know and I can update the response accordingly.
+
+
+===== CHUNK 4 =====
+Here is the JSON array with extracted information:
+
+```
+[
+  {
+    "entity_name": "State",
+    "industry": "",
+    "summary": "A state in India where people live throughout the state.",
+    "key_numbers": [
+      "less than Rs. 1,000"
+    ]
+  },
+  {
+    "entity_name": "V2",
+    "industry": "Value Retail",
+    "summary": "A value retail company that advises to ignore quarter's same-store sales numbers and look at their average growth figures over two quarters instead.",
+    "key_numbers": [
+      "Rs. 1,000 (average customer spend per visit)",
+      "two quarters"
+    ]
+  },
+  {
+    "entity_name": "Vishal Megamat",
+    "industry": "",
+    "summary": "A company in the value retail space trying to draw brand new customers and cater to customers who are upgrading to better clothing.",
+    "key_numbers": [
+      "Rs. 50-60 (price of t-shirts sold by Mishow)"
+    ]
+  },
+  {
+    "entity_name": "Trent",
+    "industry": "Value Retail",
+    "summary": "A company operating in the cheap fashion space, making waves with its Zodio brand.",
+    "key_numbers": [
+      "Rs. 50-60 (price of t-shirts sold by Mishow)"
+    ]
+  },
+  {
+    "entity_name": "Reliance",
+    "industry": "Value Retail",
+    "summary": "A company making an aggressive entry in the value retail space with its U-Star label.",
+    "key_numbers": [
+      "Rs. 50-60 (price of t-shirts sold by Mishow)"
+    ]
+  },
+  {
+    "entity_name": "Mishow",
+    "industry": "Value Retail",
+    "summary": "An online retailer selling t-shirts at low prices.",
+    "key_numbers": [
+      "Rs. 50-60 (price of t-shirts sold)"
+    ]
+  },
+  {
+    "entity_name": "Vmart",
+    "industry": "",
+    "summary": "A company that believes there is enough space for new entrants in the market.",
+    "key_numbers": [
+      "two quarters"
+    ]
+  }
+]
+```
+
+Note: I've grouped companies under their relevant industry (Value Retail) if it's mentioned in the text, and kept entities like State as separate since they don't seem to belong to a specific industry.
+
+
+===== CHUNK 5 =====
+Here is the JSON output with the extracted entities:
+
+[
+    {
+        "entity_name": "Vmart",
+        "industry": "",
+        "summary": "Vmart is a company that operates in the value retail industry.",
+        "key_numbers": [
+            "8 to 10 kilometer radius from their store (radius of quick commerce service)",
+            "1000 rupees (amount that customers can barely afford to part with on a shopping trip)"
+        ]
+    },
+    {
+        "entity_name": "Zodio",
+        "industry": "",
+        "summary": "Zodio is a company that operates in the value retail industry and is mentioned as one of V2's suppliers.",
+        "key_numbers": []
+    },
+    {
+        "entity_name": "V2",
+        "industry": "",
+        "summary": "V2 is a company that operates in the value retail industry and has implemented an early payment system for its vendors.",
+        "key_numbers": [
+            ""
+        ]
+    },
+    {
+        "entity_name": "Vishal Meghamat",
+        "industry": "",
+        "summary": "Vishal Meghamat is a person who has rolled out a quick commerce service from many of his stores.",
+        "key_numbers": [
+            "8 to 10 kilometer radius (radius of quick commerce service)"
+        ]
+    }
+]
+
+Note: The entity names and industries were inferred based on the context of the text, as specific industry names or company names were not explicitly mentioned.
+
+
+===== CHUNK 6 =====
+Here is the JSON output for the given text:
+
+```
+[
+  {
+    "entity_name": "Drone Acharya Aerial Innovations Limited",
+    "industry": "Aerospace/Drone Services",
+    "summary": "Drone Acharya is a small listed drone training and drone services company based in Pune. It was accused of presenting a false image of growth and using investor money in ways it did not disclose.",
+    "key_numbers": [
+      "2022", // year DGCA approval
+      "-1" // operating cash flows (negative)
+    ]
+  },
+  {
+    "entity_name": "SEBI",
+    "industry": "Regulatory Body/Financial Regulator",
+    "summary": "SEBI passed an order against Drone Acharya Aerial Innovations Limited for presenting a false image of growth and using investor money in ways it did not disclose.",
+    "key_numbers": [
+      "None specified" // no specific numbers mentioned
+    ]
+  },
+  {
+    "entity_name": "BSE's SME platform",
+    "industry": "Stock Exchange",
+    "summary": "Drone Acharya Aerial Innovations Limited listed on BSE's SME platform after making its IPO.",
+    "key_numbers": [
+      "None specified" // no specific numbers mentioned
+    ]
+  },
+  {
+    "entity_name": "Diwali",
+    "industry": "Festivals/Cultural Events",
+    "summary": "A time when customers might hold off on purchases to save money.",
+    "key_numbers": [
+      "1000" // amount of rupees that a customer can afford
+    ]
+  }
+]
+```
+
+Note: I did not group the companies under their industry as there were no clear indications in the text that they operate within a shared sector. If more context is provided, I can try to group them accordingly.
+
+
+===== CHUNK 7 =====
+Here is the JSON array with extracted entities:
+
+[
+    {
+        "entity_name": "Dronacharya",
+        "industry": "",
+        "summary": "Dronacharya was involved in a potential regulatory issue related to its IPO. It gave away shares to many people in private placements, issued an unusually large number of bonus shares, and had a master base of 199 pre-IPO investors. After the IPO, its shareholding pattern changed, and it sent significant amounts of money to a related party company, Aviam Synergies Private Limited (ASPN).",
+        "key_numbers": [
+            "10.6 crore", // Amount sent to ASPN
+            "20 lakh", // Additional amount sent to ASPN after IPO
+            "28 crore" // Amount used for specific purposes
+        ]
+    },
+    {
+        "entity_name": "Aviam Synergies Private Limited (ASPN)",
+        "industry": "",
+        "summary": "ASPN is a company owned by Dronacharya's promoters, Prateek and Nikita Srivastava. Dronacharya sent significant amounts of money to ASPN before its IPO, which was not disclosed in the prospectus.",
+        "key_numbers": [
+            "10.6 crore" // Amount received from Dronacharya
+        ]
+    },
+    {
+        "entity_name": "SEBI",
+        "industry": "Regulatory Bodies",
+        "summary": "SEBI (Securities and Exchange Board of India) investigated the IPO of Dronacharya and raised concerns about its shareholding pattern, bonus shares, and transactions with related parties.",
+        "key_numbers": [
+            "None explicitly mentioned"
+        ]
+    }
+]
+
+Note that I have not included general concepts or generic metrics in separate entities. Instead, they are folded under their respective industries (e.g., SEBI's investigation is under the Regulatory Bodies industry).
+
+
+===== CHUNK 8 =====
+Here is the JSON array with the extracted entities:
+
+```
+[
+  {
+    "entity_name": "Dronacharya",
+    "industry": "Aviation/Aerospace",
+    "summary": "A company that went public through an IPO and failed to maintain transparency in its financial dealings. It used funds raised from the IPO for various purposes, including purchases of drones and accessories, laptops, assembled desktops, refurbished computers, 3D printers, and other items not disclosed to investors.",
+    "key_numbers": [
+      "Rs.28 crore",
+      "Rs.12.45 crore",
+      "Rs.3.6 crore",
+      "Rs.35 crore",
+      "$1.26 million"
+    ]
+  },
+  {
+    "entity_name": "Sebi",
+    "industry": "Regulatory Body/Financial Regulation",
+    "summary": "A regulatory body that investigated Dronacharya's financial dealings and found discrepancies in its revenue recognition and use of funds. Sebi reviewed invoices, contracts, and transactions with other vendors to verify the information.",
+    "key_numbers": [
+      "",
+      ""
+    ]
+  },
+  {
+    "entity_name": "Trichonex Industrial Solutions",
+    "industry": "Manufacturing/Energy",
+    "summary": "A foreign entity based in Qatar that was allegedly involved in a large export order with Dronacharya. However, upon further inspection, Sebi found discrepancies in the transactions.",
+    "key_numbers": [
+      "$1.26 million"
+    ]
+  },
+  {
+    "entity_name": "IRED",
+    "industry": "Manufacturing/Energy",
+    "summary": "A foreign entity based in the UK that was allegedly involved in a large export order with Dronacharya. However, upon further inspection, Sebi found discrepancies in the transactions.",
+    "key_numbers": [
+      "$1.26 million"
+    ]
+  }
+]
+```
+
+Note: I've grouped companies under their relevant industry if the text indicates they operate in a shared sector, and only created separate entities for companies, regulatory bodies, or clearly defined industries with multiple companies involved. I've also extracted all numeric details related to each entity as stated in the original text.
+
+
+===== CHUNK 9 =====
+Here is the JSON array with extracted information:
+
+```
+[
+  {
+    "entity_name": "Sebi",
+    "industry": "",
+    "summary": "Sebi wrote to entities to verify transactions, found discrepancies in Dronacharya's records, and concluded that the company recognized revenue without completing performance obligations.",
+    "key_numbers": [
+      "$1.26 million",
+      "34",
+      "20"
+    ]
+  },
+  {
+    "entity_name": "Dronacharya",
+    "industry": "",
+    "summary": "Company under investigation for recognizing revenue without completing performance obligations, making false announcements about exports and manufacturing partnerships.",
+    "key_numbers": [
+      "$1.26 million",
+      "Rs 15 crore",
+      "Rs 26,000",
+      "Rs 1 lakh"
+    ]
+  },
+  {
+    "entity_name": "Trichonex",
+    "industry": "",
+    "summary": "Entity that received goods or services from Dronacharya, claimed to have not received export order.",
+    "key_numbers": [
+      "$1.26 million"
+    ]
+  },
+  {
+    "entity_name": "HDFC Bank",
+    "industry": "",
+    "summary": "Bank where a key foreign remittance was rejected, affecting Dronacharya's revenue booking.",
+    "key_numbers": [],
+    "industry": ""
+  },
+  {
+    "entity_name": "IRED",
+    "industry": "",
+    "summary": "Another company under investigation for similar issues with recognizing revenue without completing performance obligations.",
+    "key_numbers": [
+      "$1.26 million"
+    ]
+  },
+  {
+    "entity_name": "Pratik and Nikita Srivastava",
+    "industry": "",
+    "summary": "Promoter directors of Dronacharya, restrained from accessing securities market along with other entities.",
+    "key_numbers": [],
+    "industry": ""
+  }
+]
+```
+
+Note that some entities were grouped under an empty "industry" field since the text did not provide clear information on their respective industries.
+
+
+===== CHUNK 10 =====
+Here is the JSON array extracted from the text:
+
+```
+[
+  {
+    "entity_name": "Dronacharya",
+    "industry": "Finance/Regulation",
+    "summary": "Dronacharya was primarily importing and reselling products while presenting the arrangements as domestic manufacturing initiatives. The regulator's concern was not that the announcements were optimistic but that they created an impression of scale and momentum that was not supported by the company's financial reality.",
+    "key_numbers": [
+      "1 year",
+      "2 years"
+    ]
+  },
+  {
+    "entity_name": "Sebi",
+    "industry": "Finance/Regulation",
+    "summary": "Sebi has restrained Dronacharya, its promoter directors Pratik and Nikita Srivastava and a series of other entities from accessing the securities market. The regulator has also given out a series of penalties totaling to Rs 75 lakh.",
+    "key_numbers": [
+      "Rs 75 lakh"
+    ]
+  },
+  {
+    "entity_name": "Ola Electric",
+    "industry": "Automotive/Electric Vehicles",
+    "summary": "Ola Electric has dropped to fifth place with 8,254 units as Hero Motor Cop's Vida brand overtook it with 11,795 registrations.",
+    "key_numbers": [
+      "5th place",
+      "8,254 units",
+      "11,795 registrations"
+    ]
+  },
+  {
+    "entity_name": "Hero Motor Cop",
+    "industry": "Automotive/Electric Vehicles",
+    "summary": "Hero Motor Cop's Vida brand overtook Ola Electric with 11,795 registrations.",
+    "key_numbers": [
+      "11,795 registrations"
+    ]
+  },
+  {
+    "entity_name": "India's electric two-wheeler market",
+    "industry": "Automotive/Electric Vehicles",
+    "summary": "Electric two-wheeler registrations fell 21% to 110,761 units in November.",
+    "key_numbers": [
+      "21%",
+      "110,761 units"
+    ]
+  },
+  {
+    "entity_name": "India's textile sector",
+    "industry": "Textiles/Manufacturing",
+    "summary": "The government just approved a Rs 305 crore text ramp scheme to strengthen research, data systems and innovation in India's textile sector.",
+    "key_numbers": [
+      "Rs 305 crore"
+    ]
+  },
+  {
+    "entity_name": "US tariffs",
+    "industry": "Global Trade/Economy",
+    "summary": "US tariffs pressured export orders and business confidence dropped to its weakest level in 3.5 years.",
+    "key_numbers": [
+      "3.5 years"
+    ]
+  }
+]
+```
+
+Note that I've grouped related entities (e.g., companies like Ola Electric and Hero Motor Cop) under the same industry, as per your instructions. Also, I've kept each item concise but fully factual, including every number mentioned in the text, along with their context.

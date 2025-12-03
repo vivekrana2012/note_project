@@ -1,7 +1,7 @@
 from utils import videoId, standard_filename
 import ollama
 from prefect import task
-
+import os
 
 # ----------------------------
 # CHUNKING WITH OVERLAP
@@ -41,14 +41,13 @@ def build_merge_prompt(summary_a, summary_b):
         - Preserve ALL numbers exactly as written (no rounding, no rewriting).
         - Do not drop any important facts.
         - Maintain the exact structure shown below.
+        - Don't include any notes or explainations.
 
         OUTPUT FORMAT (follow exactly):
 
-        ### ENTITY NAME
-        - Bullet point summary describing the facts for this entity.
-
-        -- Key Numbers --
-        - Bullet list of every number related to this entity, with context.
+        ### ENTITY_NAME
+        - <STATEMENT1>
+        - <STATEMENT2>
 
         Repeat this structure for every entity.
 
@@ -78,6 +77,9 @@ def merge_all_chunk_summaries(model, chunk_summaries):
 @task
 def summarize(filename):
 
+    if not os.path.exists(filename):
+        raise FileNotFoundError(f"Transcript file not found: {filename}")
+
     model = "llama3.2:3b"
 
     with open(filename, "r", encoding="utf-8") as f:
@@ -98,36 +100,20 @@ def summarize(filename):
 
             You are an expert technical summarizer.
 
-            Your primary objective: **Extract and preserve ALL numeric information exactly as stated**.
+            Your primary objective: Extract and preserve ALL numeric information exactly as stated.
 
             TASK:
             Given a text containing multiple topics or entities, rewrite it in a structured format where:
             - Each entity or topic is separated.
             - For each entity, provide:
-                1. Entity Name
-                2. Summary (include all facts for that entity)
-                3. Key Numbers (list all numeric details related to that entity)
+                1. Entity Name - Identify companies and government/regulatory bodies as ENTITIES. If an entity appears multiple times, merge its info into one json item.
+                2. Summary - Keep each summary concise and fully factual. Provide numeric details with FULL CONTEXT. Include every number (dates, amounts, percentages, counts, metrics) and never modify, round, or add numbers.
 
-            OUTPUT FORMAT (strict):
+            OUTPUT FORMAT (STRICT — MUST FOLLOW EXACTLY):
 
-            ### ENTITY NAME
-            - Bullet point summary describing the facts for this entity.
-
-            -- Key Numbers --  
-            - Bullet list of every number related to this entity, including context.
-
-            RULES:
-            - Identify companies and government/regulatory bodies as PRIMARY ENTITIES.
-            - Group all companies under their relevant INDUSTRY if the text indicates they operate in a shared sector.
-            - Only create a separate entity if it is a company, a regulator/government body or a clearly defined industry with multiple companies involved.
-            - Do NOT create entities for general concepts, generic metrics, policies alone (they belong to the industry affected) or subtopics (fold them under the industry).
-            - Keep each section concise but fully factual.
-            - Include *every* number (dates, amounts, percentages, counts, metrics).
-            - Never modify, round, or add numbers.
-            - Include their context (what the number refers to).
-            - If an entity appears multiple times, merge its info into one section.
-
-            Repeat this section for every entity identified in the input text.
+            ### ENTITY_NAME
+            - <STATEMENT1>
+            - <STATEMENT2>
                 
             TRANSCRIPT CHUNK:
             {chunk}

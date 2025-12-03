@@ -1,0 +1,97 @@
+Here is the merged JSON array:
+
+```
+[
+  {
+    "entity_name": "Vishal Megamart",
+    "industry": "Retail",
+    "summary": "A large profitable retailer with a steadily compounding business. Added nearly **100** new stores over the year, even as each store grew its sales by an average of **12.8%**. Its revenues rose by approximately **22%** year on year, reaching Rs. **3000 crore**. The company's operating margins were the best of three, comfortably above Vvmart and a shade higher than V2.",
+    "key_numbers": [
+      "100",
+      "Rs. 3000 crore",
+      "12.8%",
+      "22%"
+    ]
+  },
+  {
+    "entity_name": "Vvmart",
+    "industry": "",
+    "summary": "Showed three flavours of growth, with demand hitting its peak and average selling price falling due to early Diwali celebrations. A retailer in a different place, bleeding cash until recently. Its revenues rose about **22%** to Rs. **800 crore** in the quarter.",
+    "key_numbers": [
+      "12.8%",
+      "Rs. 800 crore",
+      "11%"
+    ]
+  },
+  {
+    "entity_name": "V2",
+    "industry": "Retail",
+    "summary": "A rapidly scaling up retailer, with revenues almost doubling year on year to Rs. **710 crore**. The company's same-store sales grew by a sober **10%** and it opened **43 new stores** in the last quarter.",
+    "key_numbers": [
+      "**86%**",
+      "Rs. 710 crore",
+      "10%",
+      "43 new stores"
+    ]
+  },
+  {
+    "entity_name": "Dronacharya",
+    "industry": "Finance/Regulation",
+    "summary": "A company that went public through an IPO and failed to maintain transparency in its financial dealings. It used funds raised from the IPO for various purposes, including purchases of drones and accessories, laptops, assembled desktops, refurbished computers, 3D printers, and other items not disclosed to investors.",
+    "key_numbers": [
+      "Rs.28 crore",
+      "Rs.12.45 crore",
+      "Rs.3.6 crore",
+      "Rs.35 crore",
+      "$1.26 million"
+    ]
+  },
+  {
+    "entity_name": "Aviam Synergies Private Limited (ASPN)",
+    "industry": "",
+    "summary": "ASPN is a company owned by Dronacharya's promoters, Prateek and Nikita Srivastava. Dronacharya sent significant amounts of money to ASPN before its IPO, which was not disclosed in the prospectus.",
+    "key_numbers": [
+      "10.6 crore" 
+    ]
+  },
+  {
+    "entity_name": "Kerala",
+    "industry": "Retail Industry (specific region)",
+    "summary": "A state in India with a continuously populated population, making it suitable for Vishal Megamart's expansion strategy.",
+    "key_numbers": [
+      "**6 cities**"
+    ]
+  },
+  {
+    "entity_name": "Diwali",
+    "industry": "Festivals/Cultural Events",
+    "summary": "A time when customers might hold off on purchases to save money.",
+    "key_numbers": [
+      "1000" 
+    ]
+  },
+  {
+    "entity_name": "SEBI",
+    "industry": "Regulatory Bodies (Financial)",
+    "summary": "SEBI investigated the IPO of Dronacharya and raised concerns about its shareholding pattern, bonus shares, and transactions with related parties.",
+    "key_numbers": [
+      "None explicitly mentioned"
+    ]
+  },
+  {
+    "entity_name": "HDFC Bank",
+    "industry": "",
+    "summary": "Bank where a key foreign remittance was rejected, affecting Dronacharya's revenue booking.",
+    "key_numbers": [],
+    "industry": ""
+  },
+  {
+    "entity_name": "IRED",
+    "industry": "Manufacturing/Energy",
+    "summary": "",
+    "key_numbers": [
+      "$1.26 million"
+    ]
+  }
+]
+```

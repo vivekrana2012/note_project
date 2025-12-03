@@ -15,3 +15,5 @@ prefect: prefect deployment run 'YouTube Video to Summary Pipeline/yt_pipeline_d
 ### RSS ###
 Markets by Zerodha       -> https://www.youtube.com/feeds/videos.xml?channel_id=UCXbKJML9pVclFHLFzpvBgWw
 Markets by Zerodha Hindi -> https://www.youtube.com/feeds/videos.xml?channel_id=UCorKX0CAjQh0SnflWPnnI9w
+
+For serving the FastAPI: uvicorn api:app --reload
