@@ -5,6 +5,7 @@ from utils import standard_filename
 
 import sqlite3
 import os
+import json
 
 class VideoAlreadyExists(Exception):
     pass
@@ -51,7 +52,7 @@ def download_audio(url):
             "length_seconds": yt.length,
             "views": yt.views,
             "description": yt.description,
-            "rating": yt.rating if hasattr(yt, 'rating') else "N/A",
+            "thumbnail": yt.thumbnail_url if hasattr(yt, 'thumbnail_url') else None,
             "keywords": yt.keywords if yt.keywords else [],
         }
 
@@ -61,10 +62,13 @@ def download_audio(url):
 
         print("Saved metadata: ", metadata_filename)
 
+        # Convert keywords list to JSON string for database
+        keywords_json = json.dumps(metadata['keywords'])
+
         cur.execute("""
-        INSERT OR IGNORE INTO youtube (video_id, url, title, publish_date)
-        VALUES (?, ?, ?, ?)
-        """, (metadata['video_id'], metadata['url'], metadata['title'], metadata['publish_date']))
+        INSERT OR IGNORE INTO youtube (video_id, url, title, publish_date, thumbnail, keywords)
+        VALUES (?, ?, ?, ?, ?, ?)
+        """, (metadata['video_id'], metadata['url'], metadata['title'], metadata['publish_date'], metadata['thumbnail'], keywords_json))
 
         conn.commit()
         
