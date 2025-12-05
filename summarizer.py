@@ -128,7 +128,7 @@ def summarize(filename):
     # ----------------------------
 
     video_id = videoId(filename)
-    chunk_summaries_filename = standard_filename(video_id, f"chunk_summaries_{video_id}.txt")
+    chunk_summaries_filename = standard_filename(video_id, f"chunk_summaries__{video_id}.txt")
 
     with open(chunk_summaries_filename, "w", encoding="utf-8") as f:
         for i, s in enumerate(chunk_summaries):
@@ -143,11 +143,11 @@ def summarize(filename):
 
     final_summary = merge_all_chunk_summaries(model, chunk_summaries)
 
-    final_summary_filename = standard_filename(video_id, f"final_summary_{video_id}.txt")
+    final_summary_filename = standard_filename(video_id, f"final_summary__{video_id}.txt")
 
     with open(final_summary_filename, "w", encoding="utf-8") as f:
         f.write(final_summary)
 
     print(f"Final summary saved to {final_summary_filename}")
 
-    return final_summary
+    return final_summary_filename

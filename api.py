@@ -23,7 +23,7 @@ def list_existing_videos():
 
     for row in db_rows:
         video_id = row["video_id"]
-        filename = f"formatted_summary_{video_id}.json"
+        filename = f"formatted_summary__{video_id}.json"
         filepath = os.path.join(BASE_PATH, video_id, filename)
 
         if os.path.isfile(filepath):
@@ -42,7 +42,7 @@ def list_existing_videos():
 
 @app.get("/videos/{video_id}")
 def get_video_summary(video_id: str):
-    filename = f"formatted_summary_{video_id}.json"
+    filename = f"formatted_summary__{video_id}.json"
     filepath = os.path.join(BASE_PATH, video_id, filename)
 
     if not os.path.isfile(filepath):

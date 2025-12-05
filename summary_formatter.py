@@ -1,4 +1,5 @@
 import re, json, os
+from utils import videoId
 
 def format(filename):
 
@@ -20,9 +21,9 @@ def format(filename):
                 for l in lines[1:] if re.match(r'^[-*•]', l)]
         result.append({"entity": entity, "summary": bullets})
 
-    # Write JSON to file
-    with open("resources/KRwz80Y3hQk/formatted_summary_KRwz80Y3hQk.json", "w", encoding="utf-8") as f:
-        json.dump(result, f, indent=2, ensure_ascii=False)
+    video_id = videoId(filename)
+    formatted_filename = os.path.join("resources", video_id, f"formatted_summary__{video_id}.json")
 
-if __name__ == "__main__":
-    format('resources/KRwz80Y3hQk/final_summary_KRwz80Y3hQk.txt')
+    # Write JSON to file
+    with open(formatted_filename, "w", encoding="utf-8") as f:
+        json.dump(result, f, indent=2, ensure_ascii=False)

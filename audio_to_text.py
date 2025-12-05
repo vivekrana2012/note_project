@@ -10,7 +10,7 @@ def transcript(filename):
 
     video_id = videoId(filename)
 
-    transcript_filename = standard_filename(video_id, f"transcript_{video_id}.txt")
+    transcript_filename = standard_filename(video_id, f"transcript__{video_id}.txt")
 
     # Open the output file for writing
     with open(transcript_filename, "w", encoding="utf-8") as f:

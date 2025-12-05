@@ -1,0 +1,19 @@
+<div class="container">
+  <header>
+    <button class="back-btn" (click)="goBack()">← back</button>
+    <h1>Summary</h1>
+  </header>
+
+  <div *ngIf="loading" class="loading">Loading summary...</div>
+  
+  <div *ngIf="error" class="error">{{ error }}</div>
+
+  <div *ngIf="!loading && summaryData" class="summary-content">
+    <div *ngFor="let item of summaryData" class="entity-section">
+      <h3>{{ item.entity }}</h3>
+      <ul class="summary-list">
+        <li *ngFor="let point of item.summary">{{ point }}</li>
+      </ul>
+    </div>
+  </div>
+</div>

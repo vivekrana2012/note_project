@@ -34,14 +34,14 @@ def download_audio(url):
         if not audio_stream:
             raise ValueError("No audio stream available for this video")
 
-        filename = f"audio_{video_id}"
+        filename = f"audio__{video_id}"
 
         # Download audio
         out_file = audio_stream.download(output_path=f"./resources/{video_id}", filename=filename)
         print("Downloaded Audio: ", out_file)
 
         # ---- Create metadata file ----
-        metadata_filename = standard_filename(video_id, f"metadata_{video_id}.txt")
+        metadata_filename = standard_filename(video_id, f"metadata__{video_id}.txt")
 
         metadata = {
             "video_id": video_id,

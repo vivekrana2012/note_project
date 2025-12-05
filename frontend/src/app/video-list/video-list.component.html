@@ -1,0 +1,25 @@
+<div class="container">
+  <header>
+    <h1>Myro</h1>
+  </header>
+
+  <div *ngIf="loading" class="loading">Loading videos...</div>
+  
+  <div *ngIf="error" class="error">{{ error }}</div>
+
+  <div class="video-grid" *ngIf="!loading && !error">
+    <div class="video-card" *ngFor="let video of videos">
+      <a [href]="video.url" target="_blank" class="thumbnail-link">
+        <img [src]="video.thumbnail" [alt]="video.title" class="thumbnail">
+      </a>
+      <div class="video-info" (click)="viewSummary(video)">
+        <h2>{{ video.title }}</h2>
+        <span class="date">{{ formatDate(video.publish_date) }}</span>
+      </div>
+    </div>
+  </div>
+
+  <div *ngIf="!loading && videos.length === 0" class="empty">
+    No videos found with summaries
+  </div>
+</div>
