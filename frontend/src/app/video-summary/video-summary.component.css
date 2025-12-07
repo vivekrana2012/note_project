@@ -4,10 +4,6 @@
   padding: 20px;
 }
 
-header {
-  margin-bottom: 40px;
-}
-
 .back-btn {
   background: none;
   border: none;
@@ -15,18 +11,12 @@ header {
   font-size: 1rem;
   cursor: pointer;
   padding: 8px 0;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
   display: inline-block;
 }
 
 .back-btn:hover {
   text-decoration: underline;
-}
-
-header h1 {
-  font-size: 2.5rem;
-  color: #2c3e50;
-  margin: 0;
 }
 
 .loading, .error {
