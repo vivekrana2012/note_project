@@ -47,6 +47,8 @@ export class VideoListComponent implements OnInit {
   }
 
   viewSummary(video: VideoInfo) {
-    this.router.navigate(['/video', video.video_id]);
+    this.router.navigate(['/video', video.video_id], {
+      state: { video: video }
+    });
   }
 }

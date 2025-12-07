@@ -1,22 +1,7 @@
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   margin: 0 auto;
-  padding: 20px;
-}
-
-.back-btn {
-  background: none;
-  border: none;
-  color: #3498db;
-  font-size: 1rem;
-  cursor: pointer;
-  padding: 8px 0;
-  margin-bottom: 24px;
-  display: inline-block;
-}
-
-.back-btn:hover {
-  text-decoration: underline;
+  padding: 20px 80px;
 }
 
 .loading, .error {
@@ -27,6 +12,42 @@
 
 .error {
   color: #e74c3c;
+}
+
+.sticky-title {
+  position: sticky;
+  top: 73px;
+  background: #f5f5f5;
+  padding: 20px 0;
+  margin-bottom: 24px;
+  z-index: 50;
+  text-align: center;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title-link:hover h1 {
+  color: #3498db;
+}
+
+.sticky-title h1 {
+  margin: 0;
+  font-size: 1.3rem;
+  color: #2c3e50;
+  line-height: 1.4;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  transition: color 0.2s;
+}
+
+.publish-date {
+  font-size: 0.95rem;
+  color: #7f8c8d;
 }
 
 .summary-content {

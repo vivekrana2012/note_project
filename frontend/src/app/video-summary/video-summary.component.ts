@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
-import { VideoService } from '../video.service';
+import { VideoService, VideoInfo } from '../video.service';
 
 @Component({
   selector: 'app-video-summary',
@@ -12,6 +12,7 @@ import { VideoService } from '../video.service';
 })
 export class VideoSummaryComponent implements OnInit {
   videoId: string = '';
+  videoInfo: VideoInfo | null = null;
   summaryData: any = null;
   loading = true;
   error = '';
@@ -20,7 +21,13 @@ export class VideoSummaryComponent implements OnInit {
     private route: ActivatedRoute,
     private router: Router,
     private videoService: VideoService
-  ) {}
+  ) {
+    // Get video data from navigation state
+    const navigation = this.router.getCurrentNavigation();
+    if (navigation?.extras.state) {
+      this.videoInfo = navigation.extras.state['video'];
+    }
+  }
 
   ngOnInit() {
     this.videoId = this.route.snapshot.paramMap.get('id') || '';
@@ -43,7 +50,11 @@ export class VideoSummaryComponent implements OnInit {
     });
   }
 
-  goBack() {
-    this.router.navigate(['/']);
+  formatDate(dateString: string): string {
+    return new Date(dateString).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    });
   }
 }

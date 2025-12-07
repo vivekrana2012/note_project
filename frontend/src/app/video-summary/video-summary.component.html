@@ -1,16 +1,23 @@
 <div class="container">
-  <button class="back-btn" (click)="goBack()">← Back to Videos</button>
-
   <div *ngIf="loading" class="loading">Loading summary...</div>
   
   <div *ngIf="error" class="error">{{ error }}</div>
 
-  <div *ngIf="!loading && summaryData" class="summary-content">
-    <div *ngFor="let item of summaryData" class="entity-section">
-      <h3>{{ item.entity }}</h3>
-      <ul class="summary-list">
-        <li *ngFor="let point of item.summary">{{ point }}</li>
-      </ul>
+  <div *ngIf="!loading && videoInfo && summaryData">
+    <div class="sticky-title">
+      <a [href]="videoInfo.url" target="_blank" class="title-link">
+        <h1>{{ videoInfo.title }}</h1>
+      </a>
+      <span class="publish-date">{{ formatDate(videoInfo.publish_date) }}</span>
+    </div>
+
+    <div class="summary-content">
+      <div *ngFor="let item of summaryData" class="entity-section">
+        <h3>{{ item.entity }}</h3>
+        <ul class="summary-list">
+          <li *ngFor="let point of item.summary">{{ point }}</li>
+        </ul>
+      </div>
     </div>
   </div>
 </div>
