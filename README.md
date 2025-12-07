@@ -1,59 +1,92 @@
-# YouTube Video to Summary Pipeline
+# Myro - YouTube Video Summarization Platform
 
-A comprehensive pipeline that downloads YouTube videos, transcribes them using Whisper, and generates structured summaries using local LLMs via Ollama. Built with Prefect for workflow orchestration.
+A comprehensive full-stack application that automatically downloads YouTube videos, transcribes them, generates structured summaries using local LLMs, and presents them through a modern Angular web interface.
 
 ## 🎯 Overview
 
-This project automates the process of converting YouTube videos into structured, entity-based summaries with preserved numeric details. It's designed for extracting and organizing information from long-form content like podcasts, news shows, and educational videos.
+Myro automates the entire process of converting YouTube videos into structured, entity-based summaries with preserved numeric details. The system includes an RSS feed puller for automated processing, a Python backend with Prefect orchestration, and an Angular frontend for browsing summaries.
 
 ### Key Features
 
-- **Audio Extraction**: Downloads audio from YouTube videos using `pytubefix`
-- **Speech-to-Text**: Transcribes audio using Faster Whisper (small model)
-- **Intelligent Summarization**: Uses Ollama (llama3.2:3b) to create entity-based summaries
-- **Number Preservation**: Extracts and preserves ALL numeric information exactly as stated
-- **Entity Organization**: Groups information by entities (companies, industries, regulatory bodies)
-- **Workflow Orchestration**: Managed by Prefect for reliable execution and monitoring
-- **Chunking Strategy**: Processes large transcripts in overlapping chunks (500 words with 100-word overlap)
+- **📺 RSS Feed Automation**: Automatically pulls new videos from YouTube channels
+- **🎵 Audio Extraction**: Downloads audio from YouTube videos using `pytubefix`
+- **🗣️ Speech-to-Text**: Transcribes audio using Faster Whisper (small model)
+- **🤖 AI Summarization**: Uses Ollama (llama3.2:3b) to create entity-based summaries
+- **🔢 Number Preservation**: Extracts and preserves ALL numeric information exactly as stated
+- **🏢 Entity Organization**: Groups information by entities (companies, industries, regulatory bodies)
+- **📝 Smart Formatting**: Cleans and structures summaries using additional LLM passes
+- **🌐 Web Interface**: Modern Angular frontend to browse and view summaries
+- **⚙️ Workflow Orchestration**: Managed by Prefect for reliable execution and monitoring
+- **💾 Database Storage**: SQLite database for video metadata and tracking
+- **🔄 Scheduled Execution**: Cron-based automation with caffeinate support
 
 ## 🏗️ Architecture
 
+### System Overview
+
 ```
-YouTube URL
-    ↓
-[yt_to_audio.py] → Downloads audio + metadata
-    ↓
-[audio_to_text.py] → Transcribes using Faster Whisper
-    ↓
-[summarizer.py] → Generates structured summary using Ollama
-    ↓
-Final Summary + Chunk Summaries
+RSS Feed → Prefect Pipeline → Database → FastAPI → Angular Frontend
+                ↓
+        [Audio → Transcript → Summary → Formatted JSON]
 ```
 
-### Pipeline Flow
+### Pipeline Components
 
-1. **Download Audio** (`yt_to_audio.py`)
-   - Extracts audio stream from YouTube
-   - Saves metadata (title, author, views, description, etc.)
-   - Generates files: `audio_{video_id}.{ext}`, `metadata_{video_id}.txt`
-
-2. **Transcription** (`audio_to_text.py`)
-   - Uses Faster Whisper (small model)
-   - Generates: `transcript_{video_id}.txt`
-
-3. **Summarization** (`summarizer.py`)
-   - Chunks transcript (500 words, 100-word overlap)
-   - Summarizes each chunk preserving all numbers
-   - Merges summaries into final entity-based structure
-   - Generates: `chunk_summaries_{video_id}.txt`, `final_summary_{video_id}.txt`
+```
+1. RSS Puller (rss_puller.py)
+   ↓ Fetches latest videos from YouTube channels
+   
+2. Download Audio (yt_to_audio.py)
+   ↓ Extracts audio + metadata, stores in DB
+   
+3. Transcription (audio_to_text.py)
+   ↓ Converts speech to text using Whisper
+   
+4. Summarization (summarizer.py)
+   ↓ Generates entity-based summaries with chunking
+   
+5. Formatting (summary_formatter.py)
+   ↓ Cleans and structures summary using LLM
+   
+6. FastAPI Backend (api.py)
+   ↓ Serves summaries and metadata
+   
+7. Angular Frontend
+   ↓ Displays summaries in modern UI
+```
 
 ## 📋 Prerequisites
 
+### Backend
 - Python 3.8+
 - Ollama installed locally with `llama3.2:3b` model
-- Prefect server running (optional, for UI monitoring)
+- Prefect server (optional, for UI monitoring)
+- SQLite3
 
-### Install Ollama
+### Frontend
+- Node.js 18+
+- Angular CLI 17+
+
+### System
+- macOS (for caffeinate support in cron)
+
+## 🚀 Installation
+
+### 1. Backend Setup
+
+```bash
+# Clone the repository
+git clone <repository-url>
+cd note_project
+
+# Install Python dependencies
+pip install -r requirements.txt
+
+# Initialize database
+python init.py
+```
+
+### 2. Install & Configure Ollama
 
 ```bash
 # macOS
@@ -62,65 +95,132 @@ brew install ollama
 # Start Ollama
 ollama serve
 
-# Pull the model
+# Pull required model
 ollama pull llama3.2:3b
 ```
 
-## 🚀 Installation
+### 3. Frontend Setup
 
-1. **Clone the repository**
 ```bash
-git clone <repository-url>
-cd note_project
+cd frontend
+
+# Install dependencies
+npm install
+
+# Start development server
+npm start
 ```
 
-2. **Install dependencies**
+Frontend will run on http://localhost:4200
+
+### 4. Start Backend API
+
 ```bash
-pip install -r requirements.txt
+# From project root
+uvicorn api:app --reload
 ```
 
-3. **Verify Ollama is running**
-```bash
-# Test Ollama connection
-ollama list
-```
+API will run on http://localhost:8000
 
 ## 📦 Project Structure
 
 ```
 note_project/
-├── pipeline.py              # Main Prefect flow orchestration
-├── yt_to_audio.py          # YouTube audio download task
-├── audio_to_text.py        # Whisper transcription task
-├── summarizer.py           # LLM-based summarization task
-├── utils.py                # Helper functions (videoId extraction)
-├── prefect.yaml            # Prefect deployment configuration
-├── requirements.txt        # Python dependencies
-├── .gitignore             # Git ignore rules
-├── notes.txt              # Prefect setup notes
-└── testing/               # Sample outputs
-    ├── transcript.txt
-    ├── chunk_summaries.txt
-    ├── final_summary.txt
-    └── older_prompts.txt
+├── Backend (Python)
+│   ├── pipeline.py              # Main Prefect flow orchestration
+│   ├── yt_to_audio.py          # YouTube audio download + DB storage
+│   ├── audio_to_text.py        # Whisper transcription
+│   ├── summarizer.py           # LLM-based summarization with chunking
+│   ├── summary_formatter.py    # LLM-based summary cleaning
+│   ├── rss_puller.py           # RSS feed fetcher
+│   ├── api.py                  # FastAPI backend
+│   ├── utils.py                # Helper functions
+│   ├── prompts.py              # LLM prompts storage
+│   ├── init.py                 # Database initialization
+│   ├── init.sql                # Database schema
+│   ├── startup_script.py       # Cron job entry point
+│   ├── setup_cron.sh           # Cron setup helper
+│   ├── batch_format_summaries.py  # Batch formatting utility
+│   ├── delete_youtube_video.py    # Video deletion utility
+│   └── view_youtube_db.py         # Database viewer
+│
+├── Frontend (Angular)
+│   ├── src/
+│   │   ├── app/
+│   │   │   ├── app.component.*        # Root component with header
+│   │   │   ├── app.routes.ts         # Routing configuration
+│   │   │   ├── video.service.ts      # API service
+│   │   │   ├── video-list/           # Video grid page
+│   │   │   └── video-summary/        # Summary detail page
+│   │   ├── assets/                   # Static assets (logo)
+│   │   ├── index.html
+│   │   ├── main.ts
+│   │   ├── styles.css
+│   │   └── proxy.conf.json          # API proxy config
+│   ├── angular.json
+│   ├── package.json
+│   └── tsconfig.json
+│
+├── resources/                   # Generated files & database
+│   ├── youtube.db              # SQLite database
+│   └── {video_id}/            # Per-video directories
+│       ├── audio__{video_id}.*
+│       ├── metadata__{video_id}.txt
+│       ├── transcript__{video_id}.txt
+│       ├── chunk_summaries__{video_id}.txt
+│       ├── final_summary__{video_id}.txt
+│       └── formatted_summary__{video_id}.json
+│
+├── logs/                       # Cron job logs
+├── requirements.txt
+├── prefect.yaml
+├── .gitignore
+└── README.md
 ```
 
 ## 🎮 Usage
 
-### Option 1: Direct Python Execution
+### Manual Pipeline Execution
 
 ```python
 from pipeline import yt_pipeline
 
-# Run the pipeline
+# Process a single video
 result = yt_pipeline(url="https://www.youtube.com/watch?v=VIDEO_ID")
-
-print(f"Audio: {result['audio']}")
-print(f"Transcript: {result['transcript']}")
-print(f"Summary: {result['summary']}")
 ```
 
-### Option 2: Using Prefect (Recommended)
+### RSS Feed Processing
+
+```python
+from rss_puller import pull
+
+# Process all videos from configured channels
+pull()
+```
+
+### Scheduled Automation
+
+#### 1. Configure Cron Schedule
+
+```bash
+chmod +x setup_cron.sh
+./setup_cron.sh
+```
+
+This will display the cron command. The default schedule is:
+- **12:00 PM IST daily** (6:30 AM UTC)
+- Uses `caffeinate -dims` to prevent system sleep
+
+#### 2. Add to Crontab
+
+```bash
+crontab -e
+
+# Add the line shown by setup_cron.sh
+30 6 * * * cd /path/to/project && /usr/bin/caffeinate -dims python startup_script.py >> logs/cron.log 2>&1
+```
+
+### Using Prefect (Optional)
 
 #### 1. Start Prefect Server
 
@@ -130,249 +230,230 @@ prefect server start
 
 Access UI at: http://127.0.0.1:4200
 
-#### 2. Configure Prefect API
+#### 2. Configure & Deploy
 
 ```bash
 export PREFECT_API_URL=http://127.0.0.1:4200/api
-```
-
-#### 3. Create Worker Pool
-
-Create a worker pool named `yt-pipeline` via the Prefect UI or CLI:
-
-```bash
 prefect work-pool create yt-pipeline --type process
-```
-
-#### 4. Start Worker
-
-```bash
 prefect worker start --pool "yt-pipeline"
-```
-
-#### 5. Deploy the Flow
-
-```bash
 prefect deploy
 ```
 
-#### 6. Run the Pipeline
+#### 3. Run Deployment
 
 ```bash
 prefect deployment run 'YouTube Video to Summary Pipeline/yt_pipeline_deploy' \
   --params '{"url": "https://www.youtube.com/watch?v=VIDEO_ID"}'
 ```
 
-Monitor execution in the Prefect UI at http://127.0.0.1:4200
+### Database Management
 
-## 📄 Output Files
+#### View All Videos
 
-For each processed video with ID `abc123`, the following files are generated:
+```bash
+python view_youtube_db.py
+```
 
-| File | Description |
-|------|-------------|
-| `audio_abc123.mp3` | Downloaded audio file |
-| `metadata_abc123.txt` | Video metadata (title, author, views, etc.) |
-| `transcript_abc123.txt` | Full transcription |
-| `chunk_summaries_abc123.txt` | Individual chunk summaries |
-| `final_summary_abc123.txt` | Merged entity-based summary |
+#### Delete Specific Video
 
-## 🧩 Core Components
+```bash
+python delete_youtube_video.py VIDEO_ID
+```
 
-### 1. Video ID Extraction (`utils.py`)
+#### Delete All Videos
+
+```bash
+python delete_youtube_video.py --all
+```
+
+#### Batch Format Summaries
+
+```bash
+python batch_format_summaries.py
+```
+
+Processes all `final_summary__*.txt` files and generates formatted JSON output.
+
+## 🌐 Web Interface
+
+### Video List Page (`/`)
+
+- Grid layout with 3 columns (4:3 aspect ratio cards)
+- Video thumbnails with titles and publish dates
+- Click card to view summary
+- Click thumbnail to open YouTube video
+
+### Summary Page (`/video/:id`)
+
+- Sticky title that remains visible while scrolling
+- Entity-based summary sections
+- Bullet-pointed facts with preserved numbers
+- Click title to open YouTube video in new tab
+
+### Navigation
+
+- Clicking logo/name in header returns to home page
+- Browser back button supported via Angular routing
+
+## 📄 Database Schema
+
+```sql
+CREATE TABLE youtube (
+    video_id      TEXT PRIMARY KEY,
+    url           TEXT,
+    title         TEXT,
+    publish_date  TEXT,
+    thumbnail     TEXT,
+    keywords      TEXT,              -- JSON array as string
+    timestamp     TEXT DEFAULT CURRENT_TIMESTAMP
+);
+```
+
+## 🔧 Configuration
+
+### RSS Channels
+
+Edit `rss_puller.py`:
 
 ```python
-def videoId(filepath):
-    """Extracts video_id from '<scope>_<video_id>.<ext>' filenames."""
+channel_ids = [
+    "UCXbKJML9pVclFHLFzpvBgWw",  # Markets by Zerodha
+    "ANOTHER_CHANNEL_ID",         # Add more channels
+]
 ```
 
-Utility function that extracts video IDs from generated filenames for consistent file naming.
+### LLM Model
 
-### 2. Audio Download (`yt_to_audio.py`)
-
-```python
-@task
-def download_audio(url):
-    """Downloads audio and saves metadata from YouTube URL."""
-```
-
-- Uses `pytubefix` for robust YouTube downloading
-- Extracts metadata (title, author, publish date, views, description, keywords)
-- Returns path to downloaded audio file
-
-### 3. Transcription (`audio_to_text.py`)
-
-```python
-@task
-def transcript(filename):
-    """Transcribes audio using Faster Whisper."""
-```
-
-- Uses `faster-whisper` with "small" model
-- Optimized for speed vs accuracy balance
-- Segments are written line-by-line
-
-### 4. Summarization (`summarizer.py`)
-
-The most complex component with three main functions:
-
-#### a. Text Chunking with Overlap
-
-```python
-def chunk_text(text, max_words=500, overlap_words=100):
-    """Splits text into overlapping chunks for context preservation."""
-```
-
-- Prevents loss of context at chunk boundaries
-- Default: 500 words per chunk, 100-word overlap
-
-#### b. Chunk Summarization
-
-For each chunk:
-- Identifies entities (companies, industries, regulatory bodies)
-- Extracts all numeric information
-- Structures output by entity with preserved numbers
-
-#### c. Summary Merging
-
-```python
-def merge_all_chunk_summaries(model, chunk_summaries):
-    """Iteratively merges chunk summaries into final summary."""
-```
-
-- Merges summaries pairwise
-- Deduplicates entity information
-- Preserves ALL numeric details
-
-### Output Format
-
-```markdown
-### ENTITY NAME
-- Bullet point summary describing facts for this entity.
-
--- Key Numbers --
-- Bullet list of every number related to this entity, with context.
-```
-
-## ⚙️ Configuration
-
-### Model Configuration
-
-Edit `summarizer.py` to change the LLM model:
+Edit `summarizer.py` and `summary_formatter.py`:
 
 ```python
 model = "llama3.2:3b"  # Change to any Ollama model
 ```
 
-Available alternatives:
-- `llama3.2:1b` (faster, less accurate)
-- `llama3.1:8b` (slower, more accurate)
-- `mistral:7b`
+### Chunking Parameters
 
-### Chunking Configuration
-
-Adjust chunk size in `summarizer.py`:
+Edit `summarizer.py`:
 
 ```python
 chunks = chunk_text(transcript, max_words=500, overlap_words=100)
 ```
 
-Larger chunks = more context but slower processing.
+### Whisper Model
 
-### Whisper Model Size
-
-Change model in `audio_to_text.py`:
+Edit `audio_to_text.py`:
 
 ```python
 model = WhisperModel("small")  # Options: tiny, base, small, medium, large
 ```
 
-| Model | Speed | Accuracy | VRAM |
-|-------|-------|----------|------|
-| tiny | Very Fast | Lower | ~1GB |
-| small | Fast | Good | ~2GB |
-| medium | Moderate | Better | ~5GB |
-| large | Slow | Best | ~10GB |
+### Cron Schedule
 
-## 🔍 Example Output
+Edit `setup_cron.sh`:
 
-### Input Video
-"The Daily Brief" - Episode on India's EV market and QCOs
-
-### Generated Summary Structure
-
-```markdown
-### Entity Name: Ola Electric
-- Sold 52,666 vehicles in Q3 2024
-- Recorded first positive EBITDA of 0.3%
-- Secured PLI certification through 2028
-
--- Key Numbers --
-- 52,666: Vehicles sold in Q3 2024
-- 0.3%: Positive EBITDA margin
-- Rs 380 crore: PLI claim filed for FY25
-- Rs 3000 crore: Eligible FY25 sales
-
-### Entity Name: India's Electric Two-Wheeler Industry
-- Became world's second-largest EV market in 2025
-- Crossed 8% penetration rate
-
--- Key Numbers --
-- 2020: Year market barely existed
-- 2025: Year became second-largest market
-- 8%: EV penetration rate
-- 1.44 lakh: E-scooter sales in October 2024
-```
-
-## 🐛 Troubleshooting
-
-### Common Issues
-
-**1. "Ollama connection refused"**
 ```bash
-# Ensure Ollama is running
-ollama serve
-
-# Test connection
-ollama list
+CRON_SCHEDULE="30 6 * * *"  # Change time (currently 12 PM IST)
 ```
 
-**2. "Model not found"**
-```bash
-# Pull the required model
-ollama pull llama3.2:3b
+## 🤖 AI Prompts
+
+All LLM prompts are centralized in `prompts.py`:
+
+- `CHUNK_SUMMARIZE_PROMPT`: Initial chunk summarization
+- `MERGE_SUMMARIES_PROMPT`: Merging chunk summaries
+- `ENTITY_NAME_CLEANER`: Cleaning entity names
+- `SUMMARY_POINT_CLEANER`: Cleaning summary bullet points
+
+## 📊 API Endpoints
+
+### GET `/videos`
+
+Returns list of videos with available summaries.
+
+**Response:**
+```json
+[
+  {
+    "video_id": "abc123",
+    "url": "https://youtube.com/watch?v=abc123",
+    "title": "Video Title",
+    "publish_date": "2024-01-15",
+    "thumbnail": "https://...",
+    "keywords": "[\"keyword1\", \"keyword2\"]",
+    "timestamp": "2024-01-15T10:30:00",
+    "file": "formatted_summary__abc123.json",
+    "path": "abc123/formatted_summary__abc123.json"
+  }
+]
 ```
 
-**3. "Out of memory during transcription"**
-```python
-# Use a smaller Whisper model
-model = WhisperModel("tiny")  # or "base"
+### GET `/videos/{video_id}`
+
+Returns formatted summary for specific video.
+
+**Response:**
+```json
+[
+  {
+    "entity": "Company Name",
+    "summary": [
+      "Fact 1 with numbers",
+      "Fact 2 with numbers"
+    ]
+  }
+]
 ```
 
-**4. "Prefect worker not picking up jobs"**
-```bash
-# Verify worker is running
-prefect worker ls
+## 🎨 Frontend Styling
 
-# Check worker pool configuration
-prefect work-pool inspect yt-pipeline
+### Color Scheme
 
-# Restart worker
-prefect worker start --pool "yt-pipeline"
+- Primary: `#3498db` (blue)
+- Text: `#2c3e50` (dark gray)
+- Secondary Text: `#7f8c8d` (light gray)
+- Error: `#e74c3c` (red)
+- Background: `#f5f5f5` (light gray)
+
+### Responsive Breakpoints
+
+- Desktop: 3 columns (default)
+- Tablet (<1024px): 2 columns
+- Mobile (<768px): 2 columns
+- Small Mobile (<480px): 1 column
+
+## 🔍 Output Format Example
+
+### Formatted Summary JSON
+
+```json
+[
+  {
+    "entity": "Ola Electric",
+    "summary": [
+      "Sold 52,666 vehicles in Q3 2024",
+      "Recorded first positive EBITDA of 0.3%",
+      "Secured PLI certification through 2028",
+      "Filed PLI claim of Rs 380 crore for FY25"
+    ]
+  },
+  {
+    "entity": "India's Electric Two-Wheeler Industry",
+    "summary": [
+      "Became world's second-largest EV market in 2025",
+      "Crossed 8% penetration rate",
+      "Recorded 1.44 lakh e-scooter sales in October 2024"
+    ]
+  }
+]
 ```
 
-**5. "YouTube download fails"**
-- Video may be age-restricted or private
-- Check if `pytubefix` needs updating: `pip install --upgrade pytubefix`
+## ⚡ Performance
 
-## 📊 Performance Notes
+### Processing Times (30-minute video)
 
-### Processing Times (approximate)
-
-For a 30-minute video:
 - Audio download: 10-30 seconds
-- Transcription (small model): 3-5 minutes
-- Summarization (10 chunks): 2-4 minutes per chunk
+- Transcription: 3-5 minutes
+- Chunk summarization: 2-4 minutes per chunk
+- Summary formatting: 1-2 minutes
 - **Total: ~25-45 minutes**
 
 ### Resource Usage
@@ -380,31 +461,73 @@ For a 30-minute video:
 - RAM: 4-8GB during transcription
 - CPU: High during transcription and summarization
 - Disk: ~5-10MB per minute of audio
+- Database: Minimal (<1MB for metadata)
 
-## 🔐 Privacy & Ethics
+## 🐛 Troubleshooting
 
-- Downloads are for personal use only
+### Backend Issues
+
+**Ollama connection failed**
+```bash
+ollama serve
+ollama list
+```
+
+**Database not found**
+```bash
+python init.py
+```
+
+**Video already exists error**
+```bash
+# Delete and reprocess
+python delete_youtube_video.py VIDEO_ID
+```
+
+### Frontend Issues
+
+**Assets not loading (404 errors)**
+```bash
+# Ensure assets are in src/assets/
+# Rebuild Angular app
+cd frontend
+ng serve
+```
+
+**API calls failing**
+```bash
+# Check proxy configuration
+cat frontend/src/proxy.conf.json
+
+# Ensure backend is running
+uvicorn api:app --reload
+```
+
+**Routing not working**
+```bash
+# Check RouterModule imports in app.component.ts
+# Ensure routes are defined in app.routes.ts
+```
+
+## 🔐 Privacy & Security
+
+- All AI processing happens locally via Ollama
+- No data sent to external APIs (except YouTube downloads)
+- Database stored locally in `resources/youtube.db`
 - Respect YouTube's Terms of Service
-- Do not redistribute copyrighted content
-- Be mindful of creator rights
+- For personal/research use only
 
 ## 🛠️ Future Enhancements
 
-Potential improvements:
 - [ ] GPU acceleration for Whisper
-- [ ] Custom entity type definitions
-- [ ] Export to structured formats (JSON, CSV)
-- [ ] Web UI for easier access
-- [ ] Integration with note-taking apps (Notion, Obsidian)
-
-## 🤝 Contributing
-
-Contributions welcome! Areas for improvement:
-- Better prompt engineering
-- Alternative chunking strategies
-- Output formatting options
-- Error handling
-- Testing suite
+- [ ] Support for more video platforms
+- [ ] Search functionality in frontend
+- [ ] Tags and categories
+- [ ] Export summaries to PDF/Markdown
+- [ ] Integration with note-taking apps
+- [ ] Multi-language support
+- [ ] Sentiment analysis
+- [ ] Timeline visualization
 
 ## 📝 License
 
@@ -412,10 +535,12 @@ Contributions welcome! Areas for improvement:
 
 ## 🙏 Acknowledgments
 
-- **Faster Whisper**: OpenAI's Whisper optimized for speed
+- **Faster Whisper**: Optimized Whisper implementation
 - **Ollama**: Local LLM runtime
 - **Prefect**: Workflow orchestration
 - **PyTubeFix**: Reliable YouTube downloading
+- **FastAPI**: Modern Python web framework
+- **Angular**: Frontend framework
 
 ## 📧 Contact
 
@@ -423,4 +548,4 @@ vivekrana.2012@gmail.com
 
 ---
 
-**Note**: This pipeline runs entirely locally and does not send data to external APIs (except for YouTube downloads). All AI processing happens on your machine via Ollama.
+**Built with ❤️ using local AI - No cloud dependencies**
