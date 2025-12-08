@@ -4,7 +4,7 @@ import sys
 import shutil
 
 def delete_video(video_id):
-    db_path = os.path.join("resources", "youtube.db")
+    db_path = os.path.join("..", "resources", "youtube.db")
     
     if not os.path.exists(db_path):
         print(f"Database not found at {db_path}")
@@ -30,13 +30,13 @@ def delete_video(video_id):
         print(f"Deleted video '{video_id}' from database.")
         
         # Delete associated files
-        video_dir = os.path.join("resources", video_id)
+        video_dir = os.path.join("..", "resources", video_id)
         if os.path.exists(video_dir):
             shutil.rmtree(video_dir)
             print(f"Deleted directory: {video_dir}")
         
         # Delete metadata file if it exists in root
-        metadata_file = f"metadata_{video_id}.txt"
+        metadata_file = os.path.join("..", f"metadata__{video_id}.txt")
         if os.path.exists(metadata_file):
             os.remove(metadata_file)
             print(f"Deleted metadata file: {metadata_file}")
@@ -50,7 +50,7 @@ def delete_video(video_id):
         conn.close()
 
 def delete_all_videos():
-    db_path = os.path.join("resources", "youtube.db")
+    db_path = os.path.join("..", "resources", "youtube.db")
     
     if not os.path.exists(db_path):
         print(f"Database not found at {db_path}")
@@ -85,7 +85,7 @@ def delete_all_videos():
         print(f"\nDeleted all {len(rows)} videos from database.")
         
         # Delete all video directories
-        resources_dir = "resources"
+        resources_dir = os.path.join("..", "resources")
         deleted_dirs = 0
         
         for video_id, _ in rows:

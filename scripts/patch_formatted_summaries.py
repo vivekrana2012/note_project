@@ -1,12 +1,17 @@
 import os
+import sys
 import glob
+
+# Add parent directory to path for imports
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
 from summary_formatter import format
 
 def patch_formatted_summaries():
     """
     Find and format all final_summary files in the resources directory
     """
-    resources_dir = "resources"
+    resources_dir = os.path.join("..", "resources")
     
     if not os.path.exists(resources_dir):
         print(f"Resources directory not found: {resources_dir}")

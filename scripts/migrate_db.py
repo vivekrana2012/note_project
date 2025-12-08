@@ -1,7 +1,7 @@
 import sqlite3
 import os
 
-db_path = os.path.join("resources", "youtube.db")
+db_path = os.path.join("..", "resources", "youtube.db")
 
 conn = sqlite3.connect(db_path)
 cur = conn.cursor()

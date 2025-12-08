@@ -2,7 +2,7 @@ import sqlite3
 import os
 
 def view_youtube_db():
-    db_path = os.path.join("resources", "youtube.db")
+    db_path = os.path.join("..", "resources", "youtube.db")
     
     if not os.path.exists(db_path):
         print(f"Database not found at {db_path}")

@@ -1,8 +1,10 @@
 <div class="app-container">
   <header class="app-header">
-    <div class="header-content" [routerLink]="['/']">
-      <img src="assets/logo.png" alt="Myro Logo" class="logo">
-      <p>Myro</p>
+    <div class="header-content">
+      <div class="logo-link" [routerLink]="['/']">
+        <img src="assets/logo.png" alt="Myro Logo" class="logo">
+        <p>Myro</p>
+      </div>
     </div>
   </header>
   <router-outlet></router-outlet>
